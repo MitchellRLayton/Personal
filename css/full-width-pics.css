@@ -8,6 +8,10 @@ body {
   }
 }
 
+p {
+  font-size: 10px
+}
+
 .bg-image-full {
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
