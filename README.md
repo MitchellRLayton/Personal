@@ -4,4 +4,13 @@
 
 ### Woring on publishing finalized version shortly.
 
-Thanks for taking to time to check on this website, but it is currently under development. Check back shortly.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MRL</title>
+</head>
+<body>
+Tester
+
+</body>
+</html>
