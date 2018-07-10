@@ -1,0 +1,103 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover
+}
+
+.img-responsive {
+  background: url('photo2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.autoIMG {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid white;
+  border-width: .425ex;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+/* Create the hidden pseudo-element */
+/* include the shadow for the end state */
+.autoIMG:after {
+  width: 150%;
+  height: 150%;
+  opacity: 0;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+/* Scale up the box */
+.autoIMG:hover {
+  transform: scale(1.25, 1.25);
+  border-width: .4675ex;
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.autoIMG:hover:after {
+  opacity: 1;
+}
+
+
+
+#htmlz { 
+  background: url("../pics/simpleGeom1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 10.75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.bodied {
+  position: absolute;
+  text-align: center;
+  border: solid black;
+  border-width:.5em;
+  background-color: #303030;
+  left: 0;
+  top: 25.75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+span.border {
+  background-color: #424242;
+  border:solid white;
+  border-width: 4px;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  opacity: .80
+}
