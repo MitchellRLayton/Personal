@@ -54,11 +54,10 @@
 			</div>
 		  </nav>
 			
-<form id="contact-form" method="post" action="contact.php" role="form">
 	<div class="bg-contact2" style="background-image: url('./images/bg-01.jpg');">
 		<div class="container-contact2">
 			<div class="wrap-contact2">
-				<form class="contact2-form validate-form">
+				<form id="contact-form" action="https://formspree.io/laytonmitchell916@gmail.com" method="POST" class="contact2-form validate-form">
 					<span class="contact2-form-title">
 						Let's talk!
 					</span>
@@ -69,7 +68,7 @@
 					</div>
 
 					<div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input2" type="text" name="email" required="required">
+						<input class="input2" type="text" name="_replyto" required="required">
 						<span class="focus-input2" data-placeholder="EMAIL"></span>
 					</div>
 
@@ -81,7 +80,7 @@
 					<div class="container-contact2-form-btn">
 						<div class="wrap-contact2-form-btn">
 							<div class="contact2-form-bgbtn"></div>
-							<button type="submit" class="contact2-form-btn">
+							<button type="submit" value="Send" class="contact2-form-btn">
 								Send Your Message
 							</button>
 						</div>
@@ -90,7 +89,6 @@
 			</div>
 		</div>
 	</div>
-	</form>
 
 
 
