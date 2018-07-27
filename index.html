@@ -10,6 +10,46 @@
 
     <title>mrlayton</title>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Script for going to About Me -->
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        }); 
+      </script>
+
+      <!-- Script for going to top -->
+      <script type="text/javascript">
+          $(document).ready(function() {
+                  $('.scrollup').click(function(event){
+                      event.preventDefault();
+                      $("html, body").animate({ scrollTop: 0 }, 600);
+                  });
+          });
+      </script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,14 +57,55 @@
     <link href="css/full-width-pics.css" rel="stylesheet">
     <link rel="icon" href="./images/iconBolt2.png">
 
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!--===============================================================================================-->
+      <link href="./css/full-width-pics.css" rel="stylesheet">
+    <!--===============================================================================================-->
+      <link rel="icon" type="image/png" href="./images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/css/main.css">
+      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/css/util.css">
+    <!--===============================================================================================-->
+  <style>
+      #navbar {
+        position: fixed; /* Make it stick/fixed */
+        top: 0; /* Stay on top */
+        width: 100%; /* Full width */
+        transition: top 0.4s; 
+      }
+      a.btnStyle {
+          text-rendering: auto;
+          letter-spacing: .8px;
+          -webkit-transform: all .8s ease-out!important;
+          -moz-transition: all .8s ease-out!important;
+          -o-transition: all .8s ease-out!important;
+          transition: all .8s ease-out!important;
+      }
+      a.btnStyle:hover {
+        color:rgb(217,217,217)!important;
+        transition-duration: .4s!important;
+        -webkit-webkit: transition duration 0.4s!important;
+        -moz-transition: transition duration 0.4s!important;
+        -o-transition: transition duration 0.4s!important;
+      }
+      
+  </style>
   </head>
 
-  <body>
+  <body id="top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#top">Mitchell Layton</a>
+        <a class="navbar-brand scrollup" href="#">Mitchell Layton</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +117,10 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="experience.html">Experience</a>
+              <a class="nav-link" href="experience.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="experience.html">Hobbies</a>
             </li>
           </ul>
         </div>
@@ -45,25 +129,67 @@
 
     <!-- Header - set the background image for the header in the line below -->
     <header class="py-5 bg-image-full" style="background-image: url('./pics/tempIMG1.jpg')">
-      <div class="circle">
-      <img class="autoIMG" src="./pics/mitch2.jpg" usemap="faceMap">
+    <div class="py-5" align="center" style="background-color: rgb(236, 236, 236); width:500px; margin-left: auto; margin-right: auto; border-radius: 17px">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="circle">
+                    <a href="#aboutMe" class="autoIMG"><img class="autoIMG" src="./pics/mitch2.jpg" usemap="faceMap">
+                    </a>
+                  </div>
+                <br />
+                <br />
+                <h2 class="lead text-center font-weight-normal text-dark">Hi, I'm Mitchell Layton!</h2>
+                <hr />
+                <p class="lead text-center">B.S. in <a href="#" class="lead btnStyle"><i>Statistcal Data Science</i></a><br /></p> 
+                <p class="lead font-weight-light text-center">University of California, Davis</p>
+                <br />
+              <div class="container">
+                <div class="row">
+                  <div class="column-left" style="float:left; width:33%">
+                    <a class="btn btn-outline-secondary btn-md btnStyle" href="https://www.linkedin.com/in/mitchell-layton-77438a88/" target="_blank" role="button">Linkedin</a>
+                  </div>
+                  <div class="column-center" style="display: inline-block; width:33%;">
+                      <a class="btn btn-outline-secondary btn-md btnStyle" href="../Personal/ContactForm/index.html" role="button">Contact</a>
+                    </div>
+                  <div class="column-right" style="float:right; width:33%;">
+                    <a class="btn btn-outline-secondary btn-md btnStyle" href="https://github.com/MitchellRLayton" target="_blank" role="button">GitHub</a>
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>      
       </div>
-      <!--<map name="faceMap"><area shape="circle" coords="90,90,175" alt="Mitch" href="aboutMe.html"></map>-->
-    </header>
-
+  </header>
     <!-- Content section -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="lead text-center font-weight-normal">Hi, I'm Mitchell Layton!</h2>
-        <hr />
-        <p class="lead text-center">B.S. in <i>Statistcal Data Science</i> <br /></p> 
-        <p class="lead font-weight-light text-center">University of California, Davis</p>
-        <p></p><p></p>
-        <div class="text-center">
-            <a class="btn btn-outline-secondary btn-lg" href="../Personal/ContactForm/index.html" role="button">Contact</a>
+    <section id="aboutMe" class="py-5">
+        <div class="container">
+
+        <div class="container" style="float:unset; width:50%; text-align: left;">
+            <h1 class="border-bottom border-secondary">About me</h1>
+            <p>
+              <br />
+                "Don't only practice your art, but force your way into its secrets; 
+                art deserves that, for it and knowledge can raise man to the Divine." -Ludwig van Beethoven
+                <br />
+            </p>
+          <p>
+          <br />
+          <br />
+          </p>
+          <p>
+            I embrace learning new things and going on fulfilling journeys. While I have certain career goals, I believe that a
+            general approach to fulfilling life goals are essential for long-term sustained happiness. Furthering my mind, body, and 
+            soul is important as I carry along in my daily routines. I really appreciate the various struggles and nuances of life that 
+            continually redefine who I am as a person in a positive and rewarding fashion; albeit, temporarily rewarding.
+            As with human nature, I embrace the constant changing of our self being, persona, and true character as we 
+            navigate through a confusing and persuasive reality. Thanks for checking out my first personal website, as it was a fun
+            experiencing the methods and processes it takes to construct one. Feel free to check out my Linkedin, GitHub, or shoot
+            me and email so we can talk about exciting opportunities.    
+          </p>
         </div>
-      </div>
-    </section>
+
+        </div>
+      </section>
 
     <!-- Image Section - set the background image for the header in the line below -->
     <section class="py-5 bg-image-full" style="background-image: url('./pics/grunge.jpg');">
@@ -71,14 +197,7 @@
       <div style="height: 200px;"></div>
     </section>
 
-    <!-- Content section -->
-    <section class="py-5">
-      <div class="container">
-        <h1></h1>
-        <p class="lead"></p>
-        <p></p>
-      </div>
-    </section>
+
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
@@ -91,7 +210,19 @@
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
+    
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
   </body>
 
 </html>
