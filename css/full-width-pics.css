@@ -33,27 +33,25 @@ a:hover {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: solid white;
-  border-width: .425ex;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
   margin: 0 auto;
 }
 
 /* Create the hidden pseudo-element */
 /* include the shadow for the end state */
 .autoIMG:after {
-  width: 150%;
-  height: 150%;
+  width: 125%;
+  height: 125%;
   opacity: 0;
   border-radius: 50%;
   transition: opacity 0.3s ease-in-out;
   margin: 0 auto;
+  
 }
 
 /* Scale up the box */
 .autoIMG:hover {
-  transform: scale(1.25, 1.25);
-  border-width: .4675ex;
+  transform: scale(1.1, 1.1);
 }
 
 /* Fade in the pseudo-element with the bigger shadow */
