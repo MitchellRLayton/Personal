@@ -8,6 +8,7 @@ body {
     }
 }
 
+/* IPHONE X */
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
     .cardWidth {
         width: 345px!important;
@@ -15,13 +16,39 @@ body {
         border-radius: 12px!important;
     }
 }
-
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .cardWidth {
+        width: 345px!important;
+        padding: 2px 4px 2px 4px;
+        border-radius: 13px!important;
+    }
+}
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .cardWidth {
+        width: 500px!important;
+        border-radius: 13px!important;
+    }
+}
+/* ALL DESKTOP */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     .cardWidth {
         width: 500px!important;
         border-radius: 17px!important;
     }
 }
+
+
+
 
 .bg-image-full {
     background: no-repeat center center scroll;
