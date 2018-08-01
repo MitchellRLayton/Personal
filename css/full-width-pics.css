@@ -8,6 +8,8 @@ body {
     }
 }
 
+
+
 /* IPHONE X Portrait */
 @media only screen 
   and (min-device-width: 375px) 
@@ -16,7 +18,7 @@ body {
   and (orientation: portrait) { 
     .cardWidth {
         width: 345px!important;
-        padding: 2px 4px 2px 4px;
+        padding: 0px 4px px 4px;
         border-radius: 13px!important;
     }
     .aboutContainer {
@@ -39,6 +41,9 @@ body {
         width: 75%!important
     }
 }
+
+
+
 /* ALL DESKTOP */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     .cardWidth {
@@ -47,7 +52,7 @@ body {
     }
     .aboutContainer {
         float:unset;
-        width: 45%!important
+        width: 60%!important
     }
 }
 
