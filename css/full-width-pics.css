@@ -25,6 +25,9 @@ body {
         float:unset;
         width: 100%!important
     }
+    html {
+        width: 375px!important;
+    }
 }
 /* IPHONE X Landscape */
 @media only screen 
@@ -39,6 +42,9 @@ body {
     .aboutContainer {
         float:unset;
         width: 75%!important
+    }
+    html {
+        width: 812px!important;
     }
 }
 
