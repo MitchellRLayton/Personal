@@ -1,230 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <meta name="description" content="Personal Portfolio">
-    <meta name="author" content="MitchellRLayton">
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <meta name="description" content="Personal Portfolio">
+        <meta name="author" content="MitchellRLayton">
 
-    <title>mrlayton</title>
+        <title>mrlayton</title>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <!-- Script for going to About Me -->
-    <script>
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-        
-              // Store hash
-              var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-           
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
-        }); 
-      </script>
+        <!-- Script for going to About Me -->
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
 
-      <!-- Script for going to top -->
-      <script type="text/javascript">
-          $(document).ready(function() {
-                  $('.scrollup').click(function(event){
-                      event.preventDefault();
-                      $("html, body").animate({ scrollTop: 0 }, 600);
-                  });
-          });
-      </script>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
 
-    <!-- Custom styles for this template -->
-    <link href="css/full-width-pics.css" rel="stylesheet">
-    <link rel="icon" href="./images/iconBolt2.png">
+                        // Store hash
+                        var hash = this.hash;
 
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <!--===============================================================================================-->
-      <link href="./css/full-width-pics.css" rel="stylesheet">
-    <!--===============================================================================================-->
-      <link rel="icon" type="image/png" href="./images/icons/favicon.ico"/>
-    <!--===============================================================================================-->
-      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
-      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/vendor/animate/animate.css">
-    <!--===============================================================================================-->
-      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/css/main.css">
-      <link rel="stylesheet" type="text/css" href="../Personal/ContactForm/css/util.css">
-    <!--===============================================================================================-->
-  <style>
-      #navbar {
-        position: fixed; /* Make it stick/fixed */
-        top: 0; /* Stay on top */
-        width: 100%; /* Full width */
-        transition: top 0.4s; 
-      }
-      a.btnStyle {
-          text-rendering: auto;
-          letter-spacing: .8px;
-          -webkit-transform: all .8s ease-out!important;
-          -moz-transition: all .8s ease-out!important;
-          -o-transition: all .8s ease-out!important;
-          transition: all .8s ease-out!important;
-      }
-      a.btnStyle:hover {
-        color:rgb(217,217,217)!important;
-        transition-duration: .4s!important;
-        -webkit-webkit: transition duration 0.4s!important;
-        -moz-transition: transition duration 0.4s!important;
-        -o-transition: transition duration 0.4s!important;
-      }
-      
-  </style>
-  </head>
+                        // Using jQuery's animate() method to add smooth page scroll The optional number
+                        // (800) specifies the number of milliseconds it takes to scroll to the
+                        // specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash)
+                                .offset()
+                                .top
+                        }, 800, function () {
 
-  <body id="top">
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
 
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand scrollup" href="#">Mitchell Layton</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="experience.html">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="experience.html">Hobbies</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <!-- Script for going to top -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.scrollup').click(function (event) {
+                    event.preventDefault();
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 600);
+                });
+            });
+        </script>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Header - set the background image for the header in the line below -->
-    <header class="py-5 bg-image-full" style="background-image: url('./pics/tempIMG1.jpg')">
-    <div class="py-5" align="center" style="background-color: rgb(248, 248, 248); width:500px; margin-left: auto; margin-right: auto; border-radius: 17px">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="circle">
-                    <a href="#aboutMe" class="autoIMG"><img class="autoIMG" src="./pics/mitch2.jpg" usemap="faceMap">
-                    </a>
-                  </div>
-                <br />
-                <br />
-                <h2 class="lead text-center font-weight-normal text-dark">Hi, I'm Mitchell Layton!</h2>
-                <hr />
-                <p class="lead text-center">B.S. in <a href="#" class="lead btnStyle"><i>Statistcal Data Science</i></a><br /></p> 
-                <p class="lead font-weight-light text-center" style="color:rgba(32, 75, 192, 0.788);">University of California, Davis</p>
-                <br />
-              <div class="container">
-                <div class="row">
-                  <div class="column-left" style="float:left; width:33%">
-                    <a class="btn btn-outline-secondary btn-md btnStyle" href="https://www.linkedin.com/in/mitchell-layton-77438a88/" target="_blank" role="button">Linkedin</a>
-                  </div>
-                  <div class="column-center" style="display: inline-block; width:33%;">
-                      <a class="btn btn-outline-secondary btn-md btnStyle" href="../Personal/ContactForm/index.html" role="button">Contact</a>
+        <!-- Custom styles for this template -->
+        <link href="css/full-width-pics.css" rel="stylesheet">
+        <link rel="icon" href="./images/iconBolt2.png">
+
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <!--===============================================================================================-->
+        <link href="./css/full-width-pics.css" rel="stylesheet">
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="./images/icons/favicon.ico"/>
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Personal/ContactForm/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Personal/ContactForm/vendor/animate/animate.css">
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Personal/ContactForm/vendor/css-hamburgers/hamburgers.min.css">
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Personal/ContactForm/vendor/select2/select2.min.css">
+        <!--===============================================================================================-->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Personal/ContactForm/css/main.css">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="../Personal/ContactForm/css/util.css">
+        <!--===============================================================================================-->
+        <style>
+            #navbar {
+                position: fixed;
+                /* Make it stick/fixed */
+                top: 0;
+                /* Stay on top */
+                width: 100%;
+                /* Full width */
+                transition: top 0.4s;
+            }
+            a.btnStyle {
+                text-rendering: auto;
+                letter-spacing: 0.8px;
+                -webkit-transform: all 0.8s ease-out!important;
+                -moz-transition: all 0.8s ease-out!important;
+                -o-transition: all 0.8s ease-out!important;
+                transition: all 0.8s ease-out!important;
+            }
+            a.btnStyle:hover {
+                color: rgb(217,217,217)!important;
+                transition-duration: 0.4s!important;
+                -webkit-webkit: transition duration 0.4s!important;
+                -moz-transition: transition duration 0.4s!important;
+                -o-transition: transition duration 0.4s!important;
+            }
+        </style>
+    </head>
+
+    <body id="top">
+
+        <!-- Navigation -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand scrollup" href="#">Mitchell Layton</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Hobbies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header - set the background image for the header in the line below -->
+        <header
+            class="py-5 bg-image-full"
+            style="background-image: url('./pics/tempIMG1.jpg')">
+            <div
+                class="py-5 cardWidth"
+                align="center"
+                style="background-color: rgb(248, 248, 248); margin-left: auto!important; margin-right: auto!important; border-radius: 17px">
+                <div 
+                    class="panel panel-default"
+                    style="display:flex; flex-flow:row wrap; justify-content: space-evenly;">
+                    <div class="panel-body">
+                        <div class="circle">
+                            <a href="#aboutMe" class="autoIMG"><img class="autoIMG" src="./pics/mitch2.jpg" usemap="faceMap">
+                            </a>
+                        </div>
+                        <br/>
+                        <br/>
+                        <h2 class="lead text-center font-weight-normal text-dark">Hi, I'm Mitchell Layton!</h2>
+                        <hr/>
+                        <p class="lead text-center">B.S. in
+                            <a href="#" class="lead btnStyle">
+                                <i>Statistcal Data Science</i>
+                            </a><br/></p>
+                        <p
+                            class="lead font-weight-light text-center"
+                            style="color:rgba(32, 75, 192, 0.788);">University of California, Davis</p>
+                        <br/>
+                        <div class="container">
+                            <div class="row">
+                                <div class="column-left" style="float:left; width:33%">
+                                    <a
+                                        class="btn btn-outline-secondary btn-md btnStyle"
+                                        href="https://www.linkedin.com/in/mitchell-layton-77438a88/"
+                                        target="_blank"
+                                        role="button">Linkedin</a>
+                                </div>
+                                <div class="column-center" style="display: inline-block; width:33%;">
+                                    <a
+                                        class="btn btn-outline-secondary btn-md btnStyle"
+                                        href="../Personal/ContactForm/index.html"
+                                        role="button">Contact</a>
+                                </div>
+                                <div class="column-right" style="float:right; width:33%;">
+                                    <a
+                                        class="btn btn-outline-secondary btn-md btnStyle"
+                                        href="https://github.com/MitchellRLayton"
+                                        target="_blank"
+                                        role="button">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  <div class="column-right" style="float:right; width:33%;">
-                    <a class="btn btn-outline-secondary btn-md btnStyle" href="https://github.com/MitchellRLayton" target="_blank" role="button">GitHub</a>
-                  </div>
-              </div>
+                </div>
             </div>
+        </header>
+        <!-- Content section -->
+        <section id="aboutMe" class="py-5">
+            <div class="container">
+
+                <div class="container" style="float:unset; width:50%; text-align: left;">
+                    <h1 class="border-bottom border-secondary">About me</h1>
+                    <p>
+                        <br/>
+                        "Don't only practice your art, but force your way into its secrets; art deserves
+                        that, for it and knowledge can raise man to the Divine." -Ludwig van Beethoven
+                        <br/>
+                    </p>
+                    <p>
+                        <br/>
+                        <br/>
+                    </p>
+                    <p>
+                        Soon-to-be a graduate of UC Davis and a current football player for the Aggies,
+                        I embrace learning new things and going on adventures. While I maintain a set of
+                        underlying career goals, I believe that it's even more important to focus on
+                        fulfilling life goals that may test my character in difficult situations, while
+                        providing joy as a result of success. Long-term sustained happiness is sometimes
+                        challenging to maintain, but furthering my mind, body, and soul is important as
+                        I carry along in my daily routines and habits. I truly value the various
+                        struggles and nuances of life that continually redefine who I am. As with human
+                        nature, I embrace the constant change of our own Self, persona, and character as
+                        we navigate through a reality that may be confusing, misleading, and
+                        challenging. I hope that my passions, hobbies, and interests concieve a
+                        fulfilling reality that I would be proud of when reminiscing upon this time in
+                        my life. Thanks for checking out my first personal website, as it was fun
+                        experiencing the methods and processes it takes to construct one. Feel free to
+                        check out my Linkedin, GitHub, or shoot me and email so we can talk about
+                        exciting opportunities.
+                    </p>
+                </div>
+
             </div>
-          </div>      
-      </div>
-  </header>
-    <!-- Content section -->
-    <section id="aboutMe" class="py-5">
-        <div class="container">
+        </section>
 
-        <div class="container" style="float:unset; width:50%; text-align: left;">
-            <h1 class="border-bottom border-secondary">About me</h1>
-            <p>
-              <br />
-                "Don't only practice your art, but force your way into its secrets; 
-                art deserves that, for it and knowledge can raise man to the Divine." -Ludwig van Beethoven
-                <br />
-            </p>
-          <p>
-          <br />
-          <br />
-          </p>
-          <p>
-            Soon-to-be a graduate of UC Davis and a current football player for the Aggies, I embrace learning new things and going on 
-            adventures. While I maintain a set of underlying career goals, I believe that it's even more important to focus on 
-            fulfilling life goals that may test my character in difficult situations, while providing joy as a result of success. 
-            Long-term sustained happiness is sometimes challenging to maintain, but furthering my mind, body, and soul is important
-            as I carry along in my daily routines and habits. I truly value the various struggles and nuances of life that 
-            continually redefine who I am. As with human nature, I embrace the constant change of our own Self, persona, and character
-            as we navigate through a reality that may be confusing, misleading, and challenging. I hope that my passions, hobbies,
-            and interests concieve a fulfilling reality that I would be proud of when reminiscing upon this time in my life. 
-            Thanks for checking out my first personal website, as it was fun experiencing the methods and processes it 
-            takes to construct one. Feel free to check out my Linkedin, GitHub, or shoot me and email so we can talk about exciting opportunities.    
-          </p>
-        </div>
+        <!-- Image Section - set the background image for the header in the line below
+        -->
+        <section
+            class="py-5 bg-image-full"
+            style="background-image: url('./pics/grunge.jpg');">
+            <!-- Put anything you want here! There is just a spacer below for demo purposes!
+            -->
+            <div style="height: 200px;"></div>
+        </section>
 
-        </div>
-      </section>
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; mrlayton 2018</p>
+            </div>
+            <!-- /.container -->
+        </footer>
 
-    <!-- Image Section - set the background image for the header in the line below -->
-    <section class="py-5 bg-image-full" style="background-image: url('./pics/grunge.jpg');">
-      <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-      <div style="height: 200px;"></div>
-    </section>
+        <!-- Bootstrap core JavaScript -->
+        <script src="jquery/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
 
-
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; mrlayton 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="jquery/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-50px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-    </script>
-  </body>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document
+                        .getElementById("navbar")
+                        .style
+                        .top = "0";
+                } else {
+                    document
+                        .getElementById("navbar")
+                        .style
+                        .top = "-50px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </body>
 
 </html>
