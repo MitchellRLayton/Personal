@@ -18,7 +18,7 @@ body {
   and (orientation: portrait) { 
     .cardWidth {
         width: 345px!important;
-        padding: 0px 4px px 4px;
+        padding: 0px 4px 0px 4px;
         border-radius: 13px!important;
     }
     .aboutContainer {
@@ -43,7 +43,7 @@ body {
         float:unset;
         width: 75%!important
     }
-    html {
+    html, body, nav {
         width: 812px!important;
     }
 }
