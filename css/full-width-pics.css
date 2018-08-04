@@ -2,13 +2,6 @@ body {
     padding-top: 54px;
 }
 
-@media all (min-width: 992px) {
-    body {
-        padding-top: 56px;
-    }
-}
-
-
 
 /* IPHONE X Portrait */
 @media only screen 
