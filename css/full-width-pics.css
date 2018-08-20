@@ -2,8 +2,9 @@ body {
     padding-top: 54px;
     width: 100%!important;
 }
-html, body {
-    cursor: default
+body,
+html {
+    cursor: default;
 }
 p {
     font-size: 15px!important;
@@ -12,7 +13,7 @@ p {
 /* IPHONE X Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     .cardWidth {
-        width: 345px!important;
+        max-width: 345px!important;
         padding: 0 4px;
         border-radius: 13px!important;
     }
@@ -27,7 +28,7 @@ p {
 /* IPHONE X Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .cardWidth {
-        width: 500px!important;
+        max-width: 500px!important;
         border-radius: 13px!important;
     }
     .aboutContainer {
@@ -44,16 +45,27 @@ p {
 /* ALL DESKTOP */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     .cardWidth {
-        width: 500px!important;
+        max-width: 500px!important;
         border-radius: 17px!important;
     }
     .aboutContainer {
         float: unset;
-        width: 60%!important;
+        max-width: 63%!important;
     }
-    body, html, nav {
+    body,
+    html,
+    nav {
         width: 100%;
     }
+}
+
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
 }
 
 .bg-image-full {
@@ -68,7 +80,7 @@ p {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 25px 0 10px 0;
+    padding: 25px 0 10px;
     font-size: 60px!important;
     color: whitesmoke;
 
@@ -113,7 +125,6 @@ p {
     opacity: 1;
 }
 
-
 .caption {
     position: absolute;
     left: 0;
@@ -147,27 +158,23 @@ span.border {
     opacity: 0.80;
 }
 
-
-
 /* grid layout stuff */
 .grid-container {
     display: flex;
     flex-direction: column;
     background-color: #e1e1e1;
     padding: 10px;
-    width: 100%;    
+    width: 100%;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     border-bottom: 2px solid #858585;
-    border-right: 2px solid #858585;
-    border-left: 2px solid #858585;
     margin-top: 20px;
-    padding-top: 25px!important; 
-  }
-  
-  div#container {
+    padding-top: 25px!important;
+}
+
+div#container {
     max-width: 1000px!important;
-    margin: 0 0 25px 0!important;
+    margin: 0 0 25px 0!important !important;
     font-size: 17px;
     cursor: default;
     background-color: rgba(60,60,60,.34);
@@ -176,48 +183,47 @@ span.border {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -o-transition: .3s;
-  }
-  div#container > h4 {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+div#container > h4 {
     padding-top: 12px;
     margin-bottom: 10px;
     color: rgba(245,245,245,.95);
     text-align: center;
     font-weight: 500;
     text-shadow: 1.2px 1.2px rgba(255, 0, 0, 0.4);
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -o-transition: .3s;
-  }
-  #container:hover {
-    box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.15);
-  }
-  
-  div#container > div.card-body {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+#container:hover {
+    box-shadow: 12px 20px 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+div#container > div.card-body {
     padding: 16px;
     height: auto;
     width: auto;
     background-color: #f1f1f1;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -o-transition: .3s;
-  }
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
 
-  
 img.skills {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 30%;
     height: auto;
-    padding: 0 4px 0 4px;
+    padding: 0 4px;
 }
 
 img.skills-big {
@@ -226,7 +232,7 @@ img.skills-big {
     background-attachment: fixed;
     width: 20%;
     height: auto;
-    margin: 0 38px 0 38px;
+    margin: 0 38px;
 }
 
 img.job {
@@ -235,6 +241,5 @@ img.job {
     background-attachment: fixed;
     width: 43%;
     height: auto;
-    padding: 0 2px 0 2px;
+    padding: 0 2px;
 }
-
