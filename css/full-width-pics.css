@@ -32,7 +32,7 @@ p {
         flex-flow: column wrap!important;
         background-color: #e1e1e1!important;
         align-content: space-between!important;
-        max-width: 400px!important;
+        max-width: 375px!important;
         justify-content: space-between!important;
         margin: 0 15px 0 0!important;
       }
@@ -54,6 +54,137 @@ p {
     }
 }
 
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .cardWidth {
+        max-width: 290px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 320px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 320px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 320px!important;
+        justify-content: space-between!important;
+        margin: 0 12px 0 0!important;
+      }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .cardWidth {
+        max-width: 345px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 375px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 375px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 375px!important;
+        justify-content: space-between!important;
+        margin: 0 10px 0 0!important;
+      }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .cardWidth {
+        max-width: 385px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 415px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 415px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 415px!important;
+        justify-content: space-between!important;
+        margin: 0 10px 0 0!important;
+      }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
 /* ALL DESKTOP */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     .cardWidth {
@@ -72,12 +203,291 @@ p {
 }
 
 
-/* ----------- Retina Screens ----------- */
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+
+
+/* Portrait */
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    .cardWidth {
+        max-width: 290px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 320px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 320px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 320px!important;
+        justify-content: space-between!important;
+        margin: 0 10px 0 0!important;
+      }
+}
+
+/* ----------- Galaxy S6 ----------- */
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+    .cardWidth {
+        max-width: 330px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 360px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 360px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 360px!important;
+        justify-content: space-between!important;
+        margin: 0 10px 0 0!important;
+      }
+}
+
+/* ----------- Google Pixel ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (orientation: portrait) {
+    .cardWidth {
+        max-width: 330px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 360px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 360px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 360px!important;
+        justify-content: space-between!important;
+        margin: 0 10px 0 0!important;
+      }
+}
+
+/* ----------- Google Pixel 2 ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 731px) 
+  and (orientation: portrait) {
+    .cardWidth {
+        max-width: 381px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 411px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 411px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 411px!important;
+        justify-content: space-between!important;
+        margin: 0 10px 0 0!important;
+      }
+}
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+}
+
+/* ----------- Google Pixel XL ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (orientation: portrait) {
+    .cardWidth {
+        max-width: 330px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 360px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 360px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 360px!important;
+        justify-content: space-between!important;
+        margin: 0 10px 0 0!important;
+      }
+}
+
+/* ----------- Google Pixel 2 XL ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 823px) 
+  and (orientation: portrait) {
+    .cardWidth {
+        max-width: 381px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 411px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 411px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 411px!important;
+        justify-content: space-between!important;
+        margin: 0 10px 0 0!important;
+      }
+}
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+
+}
+
+
+/* ----------- iPad ----------- */
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
+  and (orientation: portrait) {
+    .cardWidth {
+        max-width: 500px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 768px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 768px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 768px!important;
+        justify-content: space-between!important;
+        margin: 0 12px 0 0!important;
+      }
+}
+
+/* ----------- iPad PRO----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (orientation: portrait) {
+    .cardWidth {
+        max-width: 500px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: 1024px!important
+    }
+    .aboutContainer {
+        float: unset;
+        width: 100%!important;
+    }
+    html {
+        width: 1024px!important;
+    }
+    .grid-container {
+        display: flex!important;
+        flex-flow: column wrap!important;
+        background-color: #e1e1e1!important;
+        align-content: space-between!important;
+        max-width: 1024px!important;
+        justify-content: space-between!important;
+        margin: 0 12px 0 0!important;
+      }
 }
 
 .bg-image-full {
@@ -304,7 +714,7 @@ img.job {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 43%;
+    width: 75%;
     height: auto;
     padding: 0 2px;
 }
