@@ -17,6 +17,9 @@ p {
         padding: 0 4px;
         border-radius: 13px!important;
     }
+    .bg-image-full {
+        max-width: 375px!important
+    }
     .aboutContainer {
         float: unset;
         width: 100%!important;
@@ -160,17 +163,15 @@ span.border {
 
 /* grid layout stuff */
 .grid-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
     background-color: #e1e1e1;
     padding: 10px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid #858585;
-    margin-top: 20px;
-    padding-top: 25px!important;
-}
+    max-width: 400px!important;
+    justify-content: space-evenly;
+  }
 
 div#container {
     max-width: 1000px!important;
@@ -221,8 +222,8 @@ img.skills {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 30%;
-    height: auto;
+    max-width: 30%;
+    max-height: 65px;
     padding: 0 4px;
 }
 
@@ -230,8 +231,8 @@ img.skills-big {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 20%;
-    height: auto;
+    max-width: 20%;
+    max-height: 50px;
     margin: 0 38px;
 }
 
