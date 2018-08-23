@@ -604,6 +604,12 @@ p {
         float: unset;
         max-width: 63%!important;
     }
+    .desktop-card-shadow {
+        background-color: black;
+        border-radius: 17px!important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+        height: auto;
+    }
     body,
     html,
     nav {
@@ -1633,7 +1639,13 @@ img.mitchell {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     height: auto;
 }
-
+.wrapper-shadow-backgrounds {
+    background-color: black;
+    border-radius: 17px!important;
+    padding: 25px 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    height: auto;
+}
 a.btnStyle:focus {
     outline: none !important;
     -webkit-box-shadow: none !important;
