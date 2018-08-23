@@ -2,4 +2,4 @@
 
 ## Currently in development
 
-### Link: https://mitchellrlayton.github.io/Personal/
+### Link: http://mitchellrlayton.com/
