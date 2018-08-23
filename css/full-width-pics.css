@@ -17,6 +17,11 @@ p {
         padding: 0 4px;
         border-radius: 13px!important;
     }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
+        border-radius: 13px!important;
+    }
     .bg-image-full {
         max-width: 375px!important
     }
@@ -32,7 +37,7 @@ p {
         flex-flow: column wrap!important;
         background-color: #e1e1e1!important;
         align-content: space-between!important;
-        max-width: 375px!important;
+        max-width: 345px!important;
         justify-content: space-between!important;
         margin: 0 15px 0 0!important;
       }
@@ -41,6 +46,11 @@ p {
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .cardWidth {
         max-width: 500px!important;
+        border-radius: 13px!important;
+    }
+    .col-width {
+        max-width: 500px!important;
+        padding: 0 4px;
         border-radius: 13px!important;
     }
     .aboutContainer {
@@ -66,6 +76,11 @@ p {
     .cardWidth {
         max-width: 290px!important;
         padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
         border-radius: 13px!important;
     }
     .bg-image-full {
@@ -109,6 +124,11 @@ p {
     .cardWidth {
         max-width: 345px!important;
         padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
         border-radius: 13px!important;
     }
     .bg-image-full {
@@ -155,6 +175,11 @@ p {
         padding: 0 2px;
         border-radius: 13px!important;
     }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
+        border-radius: 13px!important;
+    }
     .bg-image-full {
         max-width: 415px!important
     }
@@ -191,6 +216,11 @@ p {
         max-width: 500px!important;
         border-radius: 17px!important;
     }
+    .col-width {
+        max-width: 500px!important;
+        padding: 0 4px;
+        border-radius: 13px!important;
+    }
     .aboutContainer {
         float: unset;
         max-width: 63%!important;
@@ -217,6 +247,11 @@ p {
     .cardWidth {
         max-width: 290px!important;
         padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
         border-radius: 13px!important;
     }
     .bg-image-full {
@@ -252,6 +287,11 @@ p {
         padding: 0 2px;
         border-radius: 13px!important;
     }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
+        border-radius: 13px!important;
+    }
     .bg-image-full {
         max-width: 360px!important
     }
@@ -285,6 +325,11 @@ p {
         padding: 0 2px;
         border-radius: 13px!important;
     }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
+        border-radius: 13px!important;
+    }
     .bg-image-full {
         max-width: 360px!important
     }
@@ -316,6 +361,11 @@ p {
     .cardWidth {
         max-width: 381px!important;
         padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
         border-radius: 13px!important;
     }
     .bg-image-full {
@@ -359,6 +409,11 @@ p {
         padding: 0 2px;
         border-radius: 13px!important;
     }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
+        border-radius: 13px!important;
+    }
     .bg-image-full {
         max-width: 360px!important
     }
@@ -390,6 +445,11 @@ p {
     .cardWidth {
         max-width: 381px!important;
         padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
         border-radius: 13px!important;
     }
     .bg-image-full {
@@ -436,6 +496,11 @@ p {
         padding: 0 2px;
         border-radius: 13px!important;
     }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
+        border-radius: 13px!important;
+    }
     .bg-image-full {
         max-width: 768px!important
     }
@@ -467,6 +532,11 @@ p {
     .cardWidth {
         max-width: 500px!important;
         padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .col-width {
+        max-width: 200px!important;
+        padding: 0 4px;
         border-radius: 13px!important;
     }
     .bg-image-full {
@@ -587,9 +657,17 @@ span.border {
     background-color: #e1e1e1;
     padding: 10px;
     max-width: 400px!important;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
     margin: 0 15px 0 0;
   }
+
+  .col-width {
+    max-width: 200px;
+    padding: 0 4px;
+    border-radius: 13px!important;
+}
+
 
 div#container {
     max-width: 1000px!important;
@@ -709,7 +787,6 @@ img.skills-weird:hover {
     cursor: pointer;
 }
 
-
 img.job {
     background-size: cover;
     background-repeat: no-repeat;
@@ -717,4 +794,23 @@ img.job {
     width: 75%;
     height: auto;
     padding: 0 2px;
+}
+
+img.mitchell {
+    background-color: rgba(60,60,60,.34);
+    border-radius: 15px!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: auto;
+}
+
+
+div.wrapper-shadow {
+    background-color: white;
+    border-radius: 17px!important;
+    padding: 25px 35px 25px 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    width: auto;
+    height: auto
+
 }
