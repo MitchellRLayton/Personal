@@ -107,26 +107,7 @@
                 /* Full width */
                 transition: top 0.4s;
             }
-            a.btnStyle {
-                text-rendering: auto;
-                letter-spacing: 0.8px;
-                -webkit-transform: all 0.8s ease-out!important;
-                -moz-transition: all 0.8s ease-out!important;
-                -o-transition: all 0.8s ease-out!important;
-                transition: all 0.8s ease-out!important;
-            }
-            a.btnStyle:focus {
-                outline: none !important;
-                -webkit-box-shadow: none !important;
-                box-shadow: none !important;
-            }
-            a.btnStyle:hover {
-                color: rgb(217,217,217)!important;
-                transition-duration: 0.4s!important;
-                -webkit-webkit: transition duration 0.4s!important;
-                -moz-transition: transition duration 0.4s!important;
-                -o-transition: transition duration 0.4s!important;
-            }
+
         </style>
         <script>
             $('.btn').mouseup(function ()onMouseDown = {
@@ -175,13 +156,13 @@
             class="py-5 bg-image-full"
             style="background-image: url('./pics/tempIMG1.jpg')">
             <div
-                class="py-5 cardWidth"
+                class="py-5 card-width"
                 align="center"
                 style="background-color: rgb(248, 248, 248); margin-left: auto!important; margin-right: auto!important; border-radius: 17px">
                 <div style="display:flex; flex-flow:row wrap; justify-content: space-evenly;">
                     <div class="panel-body">
                         <div class="circle">
-                            <a href="#aboutMe" class="autoIMG"><img class="autoIMG" src="./pics/mrlayton.jpg" usemap="faceMap">
+                            <a href="#aboutMe"><img class="autoIMG" src="./pics/mrlayton.jpg" usemap="faceMap">
                             </a>
                         </div>
                         <br/>
@@ -194,29 +175,29 @@
                             <a
                                 href="https://www.stat.ucdavis.edu/undergrad/major/statistical-data-science.html"
                                 target="_blank"
-                                class="lead btnStyle">
+                                class="lead">
                                 <i>Statistcal Data Science</i>
                             </a><br/></p>
                         <p
                             class="lead font-weight-light text-center"
                             style="color:rgba(32, 75, 192, 0.788); cursor: default;">University of California, Davis</p>
                         <br/>
-                        <div class="container">
-                            <div style="display:flex; flex-flow: row wrap;">
-                                <div style="padding-right: 5px">
+                        <div class="container" style="margin-bottom:-10px;">
+                            <div class="temp" style="display:flex; flex-flow: row wrap; align-content: center; justify-content: center;">
+                                <div>
                                     <a
                                         class="btn btn-outline-secondary btn-md btnStyle"
                                         href="https://www.linkedin.com/in/mitchell-layton-77438a88/"
                                         target="_blank"
                                         role="button">Linkedin</a>
                                 </div>
-                                <div style="padding:0 5px 0 5px;">
+                                <div>
                                     <a
                                         class="btn btn-outline-secondary btn-md btnStyle"
                                         href="../Personal/ContactForm/index.html"
                                         role="button">Contact</a>
                                 </div>
-                                <div style="padding-left: 5px;">
+                                <div>
                                     <a
                                         class="btn btn-outline-secondary btn-md btnStyle"
                                         href="https://github.com/MitchellRLayton"
@@ -233,7 +214,8 @@
         <section id="aboutMe" class="py-5">
             <div class="container">
                 <div
-                    class="container aboutContainer"
+                    class="container card-width-body"
+                    align="center"
                     style="float:unset; text-align: left!important;">
                     <div class="wrapper-shadow">
                         <h1 class="border-bottom border-secondary" style="cursor: default;">About me</h1>
@@ -277,7 +259,7 @@
                         </div>
                     </div>
                     <br><br>
-                    <div class="wrapper-shadow">
+                    <div class="wrapper-shadow wrapper-shadow-width">
                         <h3 class="border-bottom border-secondary">Experience</h3>
                         <br>
                         <p>

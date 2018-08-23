@@ -12,7 +12,7 @@ p {
 
 /* IPHONE X Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    .cardWidth {
+    .card-width {
         max-width: 345px!important;
         padding: 0 4px;
         border-radius: 13px!important;
@@ -22,8 +22,27 @@ p {
         padding: 0 4px;
         border-radius: 13px!important;
     }
+    div > a.btnStyle {
+        text-rendering: auto;
+        letter-spacing: 0.8px;
+        transition: all 0.8s ease-out!important;
+        max-width: auto!important;
+        height: auto;
+        font-size: auto!important;
+        -webkit-transition: all 0.8s ease-out!important;
+        -moz-transition: all 0.8s ease-out!important;
+        -o-transition: all 0.8s ease-out!important;
+    }
+    div.circle > a > img.autoIMG {
+        display: block!important;
+        width: 225px!important;
+        height: 225px!important;
+        border-radius: 50%!important;
+        transition: all 0.15s ease-in-out!important;
+        margin: 0 auto!important !important;
+    }
     .bg-image-full {
-        max-width: 375px!important
+        max-width: 375px!important;
     }
     .aboutContainer {
         float: unset;
@@ -39,12 +58,12 @@ p {
         align-content: space-between!important;
         max-width: 345px!important;
         justify-content: space-between!important;
-        margin: 0 15px 0 0!important;
-      }
+        margin: 0 15px 0 0!important !important;
+    }
 }
 /* IPHONE X Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-    .cardWidth {
+    .card-width {
         max-width: 500px!important;
         border-radius: 13px!important;
     }
@@ -52,6 +71,17 @@ p {
         max-width: 500px!important;
         padding: 0 4px;
         border-radius: 13px!important;
+    }
+    div > a.btnStyle {
+        text-rendering: auto;
+        letter-spacing: 0.8px;
+        transition: all 0.8s ease-out!important;
+        max-width: auto!important;
+        height: auto;
+        font-size: auto!important;
+        -webkit-transition: all 0.8s ease-out!important;
+        -moz-transition: all 0.8s ease-out!important;
+        -o-transition: all 0.8s ease-out!important;
     }
     .aboutContainer {
         float: unset;
@@ -66,17 +96,42 @@ p {
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
-
 /* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .cardWidth {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .card-width {
         max-width: 290px!important;
         padding: 0 2px;
         border-radius: 13px!important;
+    }
+    .card-width-body {
+        max-width: 290px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    div > a.btnStyle {
+        text-rendering: auto;
+        letter-spacing: 0.8px;
+        transition: all 0.8s ease-out!important;
+        max-width: auto!important;
+        height: auto;
+        font-size: auto!important;
+        -webkit-transition: all 0.8s ease-out!important;
+        -moz-transition: all 0.8s ease-out!important;
+        -o-transition: all 0.8s ease-out!important;
+    }
+    div.temp > div {
+        margin: 5px 5px 5px 5px!important !important;
+    }
+    div.temp {
+        margin-bottom: -20px!important;
+    }
+    .autoIMG {
+        display: block!important;
+        width: 210px!important;
+        height: 210px!important;
+        border-radius: 50%!important;
+        transition: all 0.15s ease-in-out!important;
+        margin: 0 auto!important !important;
     }
     .col-width {
         max-width: 200px!important;
@@ -84,7 +139,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 320px!important
+        max-width: 320px!important;
     }
     .aboutContainer {
         float: unset;
@@ -100,28 +155,24 @@ p {
         align-content: space-between!important;
         max-width: 320px!important;
         justify-content: space-between!important;
-        margin: 0 12px 0 0!important;
-      }
+        margin: 0 12px 0 0!important !important;
+    }
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-    .cardWidth {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .card-width {
+        max-width: 345px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
         max-width: 345px!important;
         padding: 0 2px;
         border-radius: 13px!important;
@@ -132,7 +183,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 375px!important
+        max-width: 375px!important;
     }
     .aboutContainer {
         float: unset;
@@ -148,29 +199,24 @@ p {
         align-content: space-between!important;
         max-width: 375px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
-      }
+        margin: 0 10px 0 0!important !important;
+    }
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-
-}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
-
 /* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-    .cardWidth {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .card-width {
+        max-width: 385px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
         max-width: 385px!important;
         padding: 0 2px;
         border-radius: 13px!important;
@@ -181,7 +227,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 415px!important
+        max-width: 415px!important;
     }
     .aboutContainer {
         float: unset;
@@ -197,24 +243,46 @@ p {
         align-content: space-between!important;
         max-width: 415px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
-      }
+        margin: 0 10px 0 0!important !important;
+    }
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    }
 
 /* ALL DESKTOP */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    .cardWidth {
-        max-width: 500px!important;
+    .card-width {
+        max-width: 425px!important;
         border-radius: 17px!important;
+    }
+    .card-width-body {
+        max-width: 600px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    div.temp > div {
+        margin: -5px 7px -5px 7px!important !important;
+    }
+    div > a.btnStyle {
+        text-rendering: auto;
+        letter-spacing: 0.8px;
+        transition: all 0.8s ease-out!important;
+        max-width: auto!important;
+        height: auto;
+        font-size: auto!important;
+        -webkit-transition: all 0.8s ease-out!important;
+        -moz-transition: all 0.8s ease-out!important;
+        -o-transition: all 0.8s ease-out!important;
+    }
+    .autoIMG {
+        display: block!important;
+        width: 250px!important;
+        height: 250px!important;
+        border-radius: 50%!important;
+        transition: all 0.15s ease-in-out!important;
+        margin: 0 auto!important !important;
     }
     .col-width {
         max-width: 500px!important;
@@ -232,19 +300,18 @@ p {
     }
 }
 
-
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
 /* Portrait and Landscape */
 
-
 /* Portrait */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-    .cardWidth {
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    .card-width {
+        max-width: 290px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
         max-width: 290px!important;
         padding: 0 2px;
         border-radius: 13px!important;
@@ -255,7 +322,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 320px!important
+        max-width: 320px!important;
     }
     .aboutContainer {
         float: unset;
@@ -271,18 +338,19 @@ p {
         align-content: space-between!important;
         max-width: 320px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
-      }
+        margin: 0 10px 0 0!important !important;
+    }
 }
 
 /* ----------- Galaxy S6 ----------- */
 /* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: portrait) {
-    .cardWidth {
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+    .card-width {
+        max-width: 330px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
         max-width: 330px!important;
         padding: 0 2px;
         border-radius: 13px!important;
@@ -293,7 +361,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 360px!important
+        max-width: 360px!important;
     }
     .aboutContainer {
         float: unset;
@@ -309,18 +377,20 @@ p {
         align-content: space-between!important;
         max-width: 360px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
-      }
+        margin: 0 10px 0 0!important !important;
+    }
 }
 
 /* ----------- Google Pixel ----------- */
 
 /* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (orientation: portrait) {
-    .cardWidth {
+@media screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) {
+    .card-width {
+        max-width: 330px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
         max-width: 330px!important;
         padding: 0 2px;
         border-radius: 13px!important;
@@ -331,7 +401,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 360px!important
+        max-width: 360px!important;
     }
     .aboutContainer {
         float: unset;
@@ -347,18 +417,20 @@ p {
         align-content: space-between!important;
         max-width: 360px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
-      }
+        margin: 0 10px 0 0!important !important;
+    }
 }
 
 /* ----------- Google Pixel 2 ----------- */
 
 /* Portrait */
-@media screen 
-  and (device-width: 411px) 
-  and (device-height: 731px) 
-  and (orientation: portrait) {
-    .cardWidth {
+@media screen and (device-width: 411px) and (device-height: 731px) and (orientation: portrait) {
+    .card-width {
+        max-width: 381px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
         max-width: 381px!important;
         padding: 0 2px;
         border-radius: 13px!important;
@@ -369,7 +441,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 411px!important
+        max-width: 411px!important;
     }
     .aboutContainer {
         float: unset;
@@ -385,26 +457,23 @@ p {
         align-content: space-between!important;
         max-width: 411px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
-      }
+        margin: 0 10px 0 0!important !important;
+    }
 }
 /* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-
-}
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    }
 
 /* ----------- Google Pixel XL ----------- */
 
 /* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (orientation: portrait) {
-    .cardWidth {
+@media screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait) {
+    .card-width {
+        max-width: 330px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
         max-width: 330px!important;
         padding: 0 2px;
         border-radius: 13px!important;
@@ -415,7 +484,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 360px!important
+        max-width: 360px!important;
     }
     .aboutContainer {
         float: unset;
@@ -431,18 +500,20 @@ p {
         align-content: space-between!important;
         max-width: 360px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
-      }
+        margin: 0 10px 0 0!important !important;
+    }
 }
 
 /* ----------- Google Pixel 2 XL ----------- */
 
 /* Portrait */
-@media screen 
-  and (device-width: 411px) 
-  and (device-height: 823px) 
-  and (orientation: portrait) {
-    .cardWidth {
+@media screen and (device-width: 411px) and (device-height: 823px) and (orientation: portrait) {
+    .card-width {
+        max-width: 381px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
         max-width: 381px!important;
         padding: 0 2px;
         border-radius: 13px!important;
@@ -453,7 +524,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 411px!important
+        max-width: 411px!important;
     }
     .aboutContainer {
         float: unset;
@@ -469,30 +540,24 @@ p {
         align-content: space-between!important;
         max-width: 411px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
-      }
+        margin: 0 10px 0 0!important !important;
+    }
 }
 /* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: landscape) {
-
-}
-
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+    }
 
 /* ----------- iPad ----------- */
 
-
 /* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .cardWidth {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .card-width {
         max-width: 500px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
+        max-width: 565px!important;
         padding: 0 2px;
         border-radius: 13px!important;
     }
@@ -502,7 +567,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 768px!important
+        max-width: 768px!important;
     }
     .aboutContainer {
         float: unset;
@@ -518,19 +583,21 @@ p {
         align-content: space-between!important;
         max-width: 768px!important;
         justify-content: space-between!important;
-        margin: 0 12px 0 0!important;
-      }
+        margin: 0 12px 0 0!important !important;
+    }
 }
 
 /* ----------- iPad PRO----------- */
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (orientation: portrait) {
-    .cardWidth {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+    .card-width {
         max-width: 500px!important;
+        padding: 0 2px;
+        border-radius: 13px!important;
+    }
+    .card-width-body {
+        max-width: 700px!important;
         padding: 0 2px;
         border-radius: 13px!important;
     }
@@ -540,7 +607,7 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 1024px!important
+        max-width: 1024px!important;
     }
     .aboutContainer {
         float: unset;
@@ -556,8 +623,8 @@ p {
         align-content: space-between!important;
         max-width: 1024px!important;
         justify-content: space-between!important;
-        margin: 0 12px 0 0!important;
-      }
+        margin: 0 12px 0 0!important !important;
+    }
 }
 
 .bg-image-full {
@@ -594,9 +661,6 @@ p {
     transition: all 0.15s ease-in-out;
     margin: 0 auto;
 }
-
-/* Create the hidden pseudo-element */
-/* include the shadow for the end state */
 .autoIMG:after {
     width: 120%;
     height: 120%;
@@ -604,15 +668,10 @@ p {
     border-radius: 50%;
     transition: opacity 0.3s ease-in-out;
     margin: 0 auto;
-
 }
-
-/* Scale up the box */
 .autoIMG:hover {
     transform: scale(1.1, 1.1);
 }
-
-/* Fade in the pseudo-element with the bigger shadow */
 .autoIMG:hover:after {
     opacity: 1;
 }
@@ -660,18 +719,17 @@ span.border {
     justify-content: center;
     align-content: center;
     margin: 0 15px 0 0;
-  }
+}
 
-  .col-width {
+.col-width {
     max-width: 200px;
     padding: 0 4px;
     border-radius: 13px!important;
 }
 
-
 div#container {
     max-width: 1000px!important;
-    margin: 0 0 25px 0!important;
+    margin: 0 0 25px 0!important !important;
     font-size: 17px;
     cursor: default;
     background-color: rgba(60,60,60,.34);
@@ -720,7 +778,7 @@ img.skills {
     background-attachment: fixed;
     max-width: 90%;
     max-height: 90px;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 10px 10px;
     transition: all 0.15s ease-in-out;
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -732,7 +790,7 @@ img.skills-small {
     background-attachment: fixed;
     max-width: 100%;
     max-height: 105px;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 10px 10px;
     transition: all 0.15s ease-in-out;
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -744,7 +802,7 @@ img.skills-big {
     background-attachment: fixed;
     max-width: 80%;
     max-height: 65px;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 10px 10px;
     transition: all 0.15s ease-in-out;
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -756,7 +814,7 @@ img.skills-weird {
     background-attachment: fixed;
     max-width: 80%;
     max-height: 65px;
-    margin: 20px 10px 10px 10px;
+    margin: 20px 10px 10px;
     transition: all 0.15s ease-in-out;
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -800,17 +858,27 @@ img.mitchell {
     background-color: rgba(60,60,60,.34);
     border-radius: 15px!important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
-
-div.wrapper-shadow {
+.wrapper-shadow {
     background-color: white;
     border-radius: 17px!important;
-    padding: 25px 35px 25px 35px;
+    padding: 25px 35px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-    width: auto;
-    height: auto
+    height: auto;
+}
 
+a.btnStyle:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+a.btnStyle:hover {
+    color: rgb(217,217,217)!important;
+    transition: 0.4s!important;
+    -webkit-webkit: transition duration 0.4s!important;
+    -moz-transition: transition duration 0.4s!important;
+    -o-transition: transition duration 0.4s!important;
 }
