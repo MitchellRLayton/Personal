@@ -107,7 +107,6 @@
                 /* Full width */
                 transition: top 0.4s;
             }
-
         </style>
         <script>
             $('.btn').mouseup(function ()onMouseDown = {
@@ -183,7 +182,9 @@
                             style="color:rgba(32, 75, 192, 0.788); cursor: default;">University of California, Davis</p>
                         <br/>
                         <div class="container" style="margin-bottom:-10px;">
-                            <div class="temp" style="display:flex; flex-flow: row wrap; align-content: center; justify-content: center;">
+                            <div
+                                class="temp"
+                                style="display:flex; flex-flow: row wrap; align-content: center; justify-content: center;">
                                 <div>
                                     <a
                                         class="btn btn-outline-secondary btn-md btnStyle"
@@ -360,16 +361,18 @@
 
         <div
             class="py-5 bg-image-full"
+            align="center"
             style="background-image: url('./pics/grunge.jpg');">
-            <div
-                class="py-5 col-width"
-                align="center"
-                style="background-color: rgb(255, 255, 255); margin-left: auto; margin-right: auto; border-radius: 17px">
-                <h2 class="border-bottom border-secondary" style="margin:-22px 0 0 0;">Skills</h2>
+            <div class="middle-center-container">
+                <div>
+                    <h2 class="border-bottom border-secondary" style="margin:-22px 0 0 0;">Skills</h2>
+                </div>
                 <div
-                    class="grid-container"
-                    style="background-color:white!important; border:none;">
-                    <img src="./pics/py.jpg" class="skills">
+                    class="well skill-well"
+                    align="center"
+                    style="background-color: rgb(255, 255, 255); margin-left: auto; margin-right: auto; border-radius: 17px">
+
+                    <img src="./pics/python.jpg" class="skills">
                     <img src="./pics/R.jpg" class="skills-big">
                     <img src="./pics/sql.jpg" style="padding-left: 18px" class="skills">
                     <img src="./pics/HTML5_CSS_JavaScript.jpg" class="skills">
@@ -377,17 +380,11 @@
                     <img src="./pics/django.jpg" class="skills">
                     <img
                         src="./pics/git.jpg"
-                        class="skills-weird"
+                        class="skills"
                         style="margin-left:20px!important">
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
-        <footer class="py-3 bg-dark">
-            <p class="m-0 text-center text-white" style="cursor: default;">MRLAYTON</p>
-            <!-- /.container -->
-        </footer>
 
         <!-- Bootstrap core JavaScript -->
         <script src="jquery/jquery.min.js"></script>

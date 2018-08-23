@@ -22,12 +22,14 @@ p {
         padding: 0 4px;
         border-radius: 13px!important;
     }
+    div.temp > div {
+        margin: 0 4px 0 4px!important;
+    }
     div > a.btnStyle {
         text-rendering: auto;
         letter-spacing: 0.8px;
         transition: all 0.8s ease-out!important;
-        max-width: auto!important;
-        height: auto;
+        height: auto!important;
         font-size: auto!important;
         -webkit-transition: all 0.8s ease-out!important;
         -moz-transition: all 0.8s ease-out!important;
@@ -39,26 +41,82 @@ p {
         height: 225px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important !important;
+        margin: 0 auto!important;
     }
     .bg-image-full {
-        max-width: 375px!important;
+        max-width: auto!important;
+        min-height: 375px!important;
+        position: relative!important;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 345px!important;
+        max-height: 250px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 345px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 50px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-small {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 90%!important;
+        max-height: 78px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-big {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 65px!important;
+        margin: 20px 10px 10px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
     }
     .aboutContainer {
-        float: unset;
+        float: unset!important;
         width: 100%!important;
     }
     html {
         width: 375px!important;
-    }
-    .grid-container {
-        display: flex!important;
-        flex-flow: column wrap!important;
-        background-color: #e1e1e1!important;
-        align-content: space-between!important;
-        max-width: 345px!important;
-        justify-content: space-between!important;
-        margin: 0 15px 0 0!important !important;
     }
 }
 /* IPHONE X Landscape */
@@ -71,6 +129,9 @@ p {
         max-width: 500px!important;
         padding: 0 4px;
         border-radius: 13px!important;
+    }
+    div.temp > div {
+        margin: 0 4px 0 4px!important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -108,19 +169,19 @@ p {
         padding: 0 2px;
         border-radius: 13px!important;
     }
+    div.temp > div {
+        margin: 0 auto!important;
+    }
     div > a.btnStyle {
         text-rendering: auto;
         letter-spacing: 0.8px;
         transition: all 0.8s ease-out!important;
-        max-width: auto!important;
+        max-width: 75px!important;
         height: auto;
-        font-size: auto!important;
+        font-size: 12px!important;
         -webkit-transition: all 0.8s ease-out!important;
         -moz-transition: all 0.8s ease-out!important;
         -o-transition: all 0.8s ease-out!important;
-    }
-    div.temp > div {
-        margin: 5px 5px 5px 5px!important !important;
     }
     div.temp {
         margin-bottom: -20px!important;
@@ -131,7 +192,7 @@ p {
         height: 210px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important !important;
+        margin: 0 auto!important;
     }
     .col-width {
         max-width: 200px!important;
@@ -139,7 +200,72 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 320px!important;
+        max-width: auto!important;
+        min-height: 375px!important;
+        position: relative!important;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 265px!important;
+        max-height: 235px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 265px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 50px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-small {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 90%!important;
+        max-height: 78px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-big {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 65px!important;
+        margin: 20px 10px 10px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
     }
     .aboutContainer {
         float: unset;
@@ -177,13 +303,92 @@ p {
         padding: 0 2px;
         border-radius: 13px!important;
     }
+    div.temp > div {
+        margin: 0 auto!important;
+    }
+    div > a.btnStyle {
+        text-rendering: auto;
+        letter-spacing: 0.8px;
+        transition: all 0.8s ease-out!important;
+        max-width: 75px!important;
+        height: auto;
+        font-size: 12px!important;
+        -webkit-transition: all 0.8s ease-out!important;
+        -moz-transition: all 0.8s ease-out!important;
+        -o-transition: all 0.8s ease-out!important;
+    }
     .col-width {
         max-width: 200px!important;
         padding: 0 4px;
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 375px!important;
+        max-width: auto!important;
+        min-height: 375px!important;
+        position: relative!important;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 300px!important;
+        max-height: 235px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 300px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 50px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-small {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 90%!important;
+        max-height: 78px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-big {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 65px!important;
+        margin: 20px 10px 10px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
     }
     .aboutContainer {
         float: unset;
@@ -227,7 +432,72 @@ p {
         border-radius: 13px!important;
     }
     .bg-image-full {
-        max-width: 415px!important;
+        max-width: auto!important;
+        min-height: 375px!important;
+        position: relative!important;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 310px!important;
+        max-height: 235px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 310px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 50px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-small {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 90%!important;
+        max-height: 78px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-big {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 65px!important;
+        margin: 20px 10px 10px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
     }
     .aboutContainer {
         float: unset;
@@ -282,12 +552,53 @@ p {
         height: 250px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important !important;
+        margin: 0 auto!important;
     }
     .col-width {
         max-width: 500px!important;
         padding: 0 4px;
         border-radius: 13px!important;
+    }
+    .bg-image-full {
+        max-width: auto!important;
+        height: 700px!important;
+        position: relative;
+    }
+    img.skills {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 90%;
+        max-height: 90px;
+        margin: 20px 10px 10px;
+        transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
+    }
+    img.skills-small {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 100%;
+        max-height: 105px;
+        margin: 20px 10px 10px;
+        transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
+    }
+    img.skills-big {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 80%;
+        max-height: 65px;
+        margin: 20px 10px 10px;
+        transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
     }
     .aboutContainer {
         float: unset;
@@ -323,6 +634,73 @@ p {
     }
     .bg-image-full {
         max-width: 320px!important;
+        height: 700px!important;
+        position: relative;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 290px!important;
+        max-height: 240px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 290px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 90%;
+        max-height: 90px;
+        margin: 20px 10px 10px;
+        transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
+    }
+    img.skills-small {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 100%;
+        max-height: 105px;
+        margin: 20px 10px 10px;
+        transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
+    }
+    img.skills-big {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 80%;
+        max-height: 65px;
+        margin: 20px 10px 10px;
+        transition: all 0.15s ease-in-out;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
     }
     .aboutContainer {
         float: unset;
@@ -362,6 +740,71 @@ p {
     }
     .bg-image-full {
         max-width: 360px!important;
+        min-height: 375px!important;
+        position: relative!important;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 330px!important;
+        max-height: 250px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 330px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 50px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-small {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 90%!important;
+        max-height: 78px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-big {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 65px!important;
+        margin: 20px 10px 10px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
     }
     .aboutContainer {
         float: unset;
@@ -402,6 +845,71 @@ p {
     }
     .bg-image-full {
         max-width: 360px!important;
+        min-height: 375px!important;
+        position: relative!important;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 330px!important;
+        max-height: 250px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 330px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 50px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-small {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 90%!important;
+        max-height: 78px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-big {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 65px!important;
+        margin: 20px 10px 10px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
     }
     .aboutContainer {
         float: unset;
@@ -442,6 +950,71 @@ p {
     }
     .bg-image-full {
         max-width: 411px!important;
+        min-height: 375px!important;
+        position: relative!important;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 300px!important;
+        max-height: 250px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 300px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 50px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-small {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 90%!important;
+        max-height: 78px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-big {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 65px!important;
+        margin: 20px 10px 10px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
     }
     .aboutContainer {
         float: unset;
@@ -485,6 +1058,71 @@ p {
     }
     .bg-image-full {
         max-width: 360px!important;
+        min-height: 375px!important;
+        position: relative!important;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 300px!important;
+        max-height: 250px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 300px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 50px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-small {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 90%!important;
+        max-height: 78px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-big {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 65px!important;
+        margin: 20px 10px 10px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
     }
     .aboutContainer {
         float: unset;
@@ -525,6 +1163,71 @@ p {
     }
     .bg-image-full {
         max-width: 411px!important;
+        min-height: 375px!important;
+        position: relative!important;
+    }
+    div.middle-center-container {
+        position: absolute!important;
+        top: 50%!important;
+        left: 50%!important;
+        margin-right: -50%!important;
+        transform: translate(-50%, -50%)!important; 
+    }
+    div.bg-image-full > div.middle-center-container > div > h2 {
+        width: 309px!important;
+        max-height: 250px!important;
+        float: unset!important;
+        margin-right: 10px!important;
+        margin-left: 10px!important;
+        text-align: center!important;
+        background-color: white!important;
+        border-top-left-radius: 15px!important;
+        border-top-right-radius: 15px!important;
+    }
+    div.bg-image-full > div.middle-center-container > div.skill-well {
+        border-top-left-radius: 0!important;
+        border-top-right-radius:0!important; 
+        width: 309px!important;
+        max-height: auto!important;
+        display: flex!important;
+        flex-flow: row wrap!important;
+        justify-content: center!important;
+        align-content: center!important;
+        padding: 10px 0 10px 0!important;
+    }
+    img.skills {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 50px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-small {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 90%!important;
+        max-height: 78px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
+    }
+    img.skills-big {
+        background-size: cover!important;
+        background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
+        max-width: 80%!important;
+        max-height: 65px!important;
+        margin: 20px 10px 10px!important;
+        transition: all 0.15s ease-in-out!important;
+        -webkit-transition: all 0.15s ease-in-out!important;
+        -moz-transition: all 0.15s ease-in-out!important;
+        -o-transition: all 0.15s ease-in-out!important;
     }
     .aboutContainer {
         float: unset;
@@ -552,14 +1255,36 @@ p {
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .card-width {
-        max-width: 500px!important;
+        max-width: 430px!important;
         padding: 0 2px;
         border-radius: 13px!important;
     }
     .card-width-body {
-        max-width: 565px!important;
+        max-width: 525px!important;
         padding: 0 2px;
         border-radius: 13px!important;
+    }
+    div.temp > div {
+        margin: -5px 7px -5px 7px!important;
+    }
+    div > a.btnStyle {
+        text-rendering: auto;
+        letter-spacing: 0.8px;
+        transition: all 0.8s ease-out!important;
+        max-width: auto!important;
+        height: auto;
+        font-size: auto!important;
+        -webkit-transition: all 0.8s ease-out!important;
+        -moz-transition: all 0.8s ease-out!important;
+        -o-transition: all 0.8s ease-out!important;
+    }
+    .autoIMG {
+        display: block!important;
+        width: 250px!important;
+        height: 250px!important;
+        border-radius: 50%!important;
+        transition: all 0.15s ease-in-out!important;
+        margin: 0 auto!important;
     }
     .col-width {
         max-width: 200px!important;
@@ -592,14 +1317,36 @@ p {
 /* Portrait */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
     .card-width {
-        max-width: 500px!important;
+        max-width: 430px!important;
         padding: 0 2px;
         border-radius: 13px!important;
     }
     .card-width-body {
-        max-width: 700px!important;
+        max-width: 600px!important;
         padding: 0 2px;
         border-radius: 13px!important;
+    }
+    div.temp > div {
+        margin: -5px 7px -5px 7px!important;
+    }
+    div > a.btnStyle {
+        text-rendering: auto;
+        letter-spacing: 0.8px;
+        transition: all 0.8s ease-out!important;
+        max-width: auto!important;
+        height: auto;
+        font-size: auto!important;
+        -webkit-transition: all 0.8s ease-out!important;
+        -moz-transition: all 0.8s ease-out!important;
+        -o-transition: all 0.8s ease-out!important;
+    }
+    .autoIMG {
+        display: block!important;
+        width: 260px!important;
+        height: 260px!important;
+        border-radius: 50%!important;
+        transition: all 0.15s ease-in-out!important;
+        margin: 0 auto!important;
     }
     .col-width {
         max-width: 200px!important;
@@ -676,7 +1423,7 @@ p {
     opacity: 1;
 }
 div.temp > div {
-    margin: -5px 7px -5px 7px!important;
+    margin: -5px 7px -5px 7px;
 }
 
 .caption {
@@ -712,16 +1459,41 @@ span.border {
     opacity: 0.80;
 }
 
-/* grid layout stuff */
-.grid-container {
+
+.bg-image-full {
+    max-width: auto;
+    height: 700px!important;
+    position: relative;
+}
+div.middle-center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+div.bg-image-full > div.middle-center-container > div > h2 {
+    max-width: 450px;
+    max-height: 350px;
+    display: float;
+    float: unset;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+div.bg-image-full > div.middle-center-container > div.skill-well {
+    border-top-left-radius: 0!important;
+    border-top-right-radius:0!important; 
+    max-width: 450px;
+    max-height: 375px;
     display: flex;
     flex-flow: row wrap;
-    background-color: #e1e1e1;
-    padding: 10px;
-    max-width: 400px!important;
     justify-content: center;
     align-content: center;
-    margin: 0 15px 0 0;
+    padding: 10px 0 10px 0!important;
 }
 
 .col-width {
@@ -811,18 +1583,7 @@ img.skills-big {
     -moz-transition: all 0.15s ease-in-out;
     -o-transition: all 0.15s ease-in-out;
 }
-img.skills-weird {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    max-width: 80%;
-    max-height: 65px;
-    margin: 20px 10px 10px;
-    transition: all 0.15s ease-in-out;
-    -webkit-transition: all 0.15s ease-in-out;
-    -moz-transition: all 0.15s ease-in-out;
-    -o-transition: all 0.15s ease-in-out;
-}
+
 img.stats {
     background-size: cover;
     background-repeat: no-repeat;
