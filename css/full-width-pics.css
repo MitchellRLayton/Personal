@@ -675,6 +675,9 @@ p {
 .autoIMG:hover:after {
     opacity: 1;
 }
+div.temp > div {
+    margin: -5px 7px -5px 7px!important;
+}
 
 .caption {
     position: absolute;
