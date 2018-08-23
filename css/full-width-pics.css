@@ -23,7 +23,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: 0 4px 0 4px!important;
+        margin: 0 4px 0 4px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -41,7 +41,7 @@ p {
         height: 225px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     .bg-image-full {
         max-width: auto!important;
@@ -53,7 +53,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 345px!important;
@@ -68,14 +68,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 345px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -105,7 +105,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -131,7 +131,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: 0 4px 0 4px!important;
+        margin: 0 4px 0 4px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -170,7 +170,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -192,7 +192,7 @@ p {
         height: 210px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     .col-width {
         max-width: 200px!important;
@@ -209,7 +209,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 265px!important;
@@ -224,14 +224,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 265px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -261,7 +261,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -286,8 +286,7 @@ p {
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
@@ -304,7 +303,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -332,7 +331,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 300px!important;
@@ -347,14 +346,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 300px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -384,7 +383,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -409,8 +408,7 @@ p {
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
@@ -441,7 +439,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 310px!important;
@@ -456,14 +454,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 310px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -493,7 +491,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -518,8 +516,7 @@ p {
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-    }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
 
 /* ALL DESKTOP */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -533,7 +530,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: -5px 7px -5px 7px!important;
+        margin: -5px 7px -5px 7px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -552,7 +549,7 @@ p {
         height: 250px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     .col-width {
         max-width: 500px!important;
@@ -648,7 +645,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 290px!important;
@@ -663,14 +660,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 290px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover;
@@ -754,7 +751,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 330px!important;
@@ -769,14 +766,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 330px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -806,7 +803,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -859,7 +856,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 330px!important;
@@ -874,14 +871,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 330px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -911,7 +908,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -964,7 +961,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 300px!important;
@@ -979,14 +976,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 300px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -1016,7 +1013,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -1040,8 +1037,7 @@ p {
     }
 }
 /* Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-    }
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {}
 
 /* ----------- Google Pixel XL ----------- */
 
@@ -1072,7 +1068,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 300px!important;
@@ -1087,14 +1083,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 300px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -1124,7 +1120,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -1177,7 +1173,7 @@ p {
         top: 50%!important;
         left: 50%!important;
         margin-right: -50%!important;
-        transform: translate(-50%, -50%)!important; 
+        transform: translate(-50%, -50%)!important;
     }
     div.bg-image-full > div.middle-center-container > div > h2 {
         width: 309px!important;
@@ -1192,14 +1188,14 @@ p {
     }
     div.bg-image-full > div.middle-center-container > div.skill-well {
         border-top-left-radius: 0!important;
-        border-top-right-radius:0!important; 
+        border-top-right-radius: 0!important;
         width: 309px!important;
         max-height: auto!important;
         display: flex!important;
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -1229,7 +1225,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -1253,8 +1249,7 @@ p {
     }
 }
 /* Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
-    }
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {}
 
 /* ----------- iPad ----------- */
 
@@ -1271,7 +1266,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: -5px 7px -5px 7px!important;
+        margin: -5px 7px -5px 7px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -1290,7 +1285,7 @@ p {
         height: 250px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     .col-width {
         max-width: 200px!important;
@@ -1333,7 +1328,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: -5px 7px -5px 7px!important;
+        margin: -5px 7px -5px 7px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -1352,7 +1347,7 @@ p {
         height: 260px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     .col-width {
         max-width: 200px!important;
@@ -1429,7 +1424,33 @@ p {
     opacity: 1;
 }
 div.temp > div {
-    margin: -5px 7px -5px 7px;
+    margin: -5px 7px;
+}
+
+.statistical {
+    transition:0.3s; 
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.statistical:after {
+    content: '';
+    width: 0px;
+    height: .1px;
+    display: block;
+    padding: -15px 0 -15px 0!important;
+    margin-bottom: -30px!important;
+    align-content: right;
+    background: black;
+    transition: 300ms;
+}
+
+.statistical:hover:after {
+    width: 90%;
+}
+.statistical:hover {
+    color: rgb(144, 185, 240);
 }
 
 .caption {
@@ -1465,7 +1486,6 @@ span.border {
     opacity: 0.80;
 }
 
-
 .bg-image-full {
     max-width: auto;
     height: 700px!important;
@@ -1476,7 +1496,7 @@ div.middle-center-container {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%);
 }
 div.bg-image-full > div.middle-center-container > div > h2 {
     max-width: 450px;
@@ -1492,14 +1512,14 @@ div.bg-image-full > div.middle-center-container > div > h2 {
 }
 div.bg-image-full > div.middle-center-container > div.skill-well {
     border-top-left-radius: 0!important;
-    border-top-right-radius:0!important; 
+    border-top-right-radius: 0!important;
     max-width: 450px;
     max-height: 375px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    padding: 10px 0 10px 0!important;
+    padding: 10px 0 10px 0!important !important;
 }
 
 .col-width {
