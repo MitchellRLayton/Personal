@@ -117,21 +117,16 @@
     <body id="top">
 
         <!-- Navigation -->
-        <nav id="navbar" class="navbar navbar-nav navbar-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand scrollup" href="#">Mitchell Layton</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                    onclick="openNav()">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div>
+            <div
+                class="collapse fixed-top"
+                id="navbarToggleExternalContent"
+                style="margin-top:55px!important;">
+                <div class="bg-light p-4">
+                    <img
+                        src="./pics/mrlayton.png"
+                        style="width:100px!important; height:auto; margin-left: auto!important">
+                    <span class="text-muted">Thanks for visiting my personal website!</span>
                     <ul class="navbar-nav ml-auto" style="margin-top: 16px!important;">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home
@@ -147,39 +142,61 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+            <nav id="navbar" class="navbar navbar-nav navbar-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand scrollup" href="#">mitchellrlayton.com</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        onclick="openNav()">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </nav>
+        </div>
 
         <!-- Header - set the background image for the header in the line below -->
         <header
             class="py-5 bg-image-full"
-            style="background-image: url('./pics/tempIMG1.jpg')">
+            style="background-image: url('./pics/tempIMG1.jpg'); margin-top: 2px!important;">
             <div
                 class="py-5 card-width wrapper-shadow-backgrounds"
                 align="center"
                 style="margin-top:20px;background-color: rgb(248, 248, 248); margin-left: auto!important; margin-right: auto!important; border-radius: 17px">
-                <div style="display:flex; flex-flow:row wrap; justify-content: space-evenly;">
-                    <div class="panel-body">
+                <div
+                    style="display:flex stats; flex-flow:row wrap; justify-content: space-evenly;">
+                    <div class="panel-body stats">
                         <div class="circle">
                             <a href="#aboutMe"><img class="autoIMG" src="./pics/mrlayton.jpg" usemap="faceMap">
                             </a>
                         </div>
                         <br/>
                         <br/>
-                        <h2
-                            class="lead text-center font-weight-normal text-dark"
-                            style="cursor: default;">Hi, I'm Mitchell Layton!</h2>
-                        <hr/>
-                        <p class="lead" style="cursor: default; font-size:20px!important;">B.S. in
-                            <a
-                                href="https://www.stat.ucdavis.edu/undergrad/major/statistical-data-science.html"
-                                target="_blank"
-                                class="lead statistical">
-                                Statistcal Data Science
-                            </a><br/></p>
-                        <p
-                            class="lead font-weight-light text-center"
-                            style="color:rgba(32, 75, 192, 0.788); cursor: default;">University of California, Davis</p>
-                        <br/>
+                        <div class="transitions">
+                            <h2
+                                class="lead text-center font-weight-normal text-dark"
+                                style="cursor: default;">Hi, I'm Mitchell Layton!</h2>
+                            <hr/>
+                            <div style="margin-top:-30px!important;">
+                                <a
+                                    href="https://www.stat.ucdavis.edu/undergrad/major/statistical-data-science.html"
+                                    target="_blank"
+                                    class="statistical"
+                                    style="cursor: default;">
+                                    <p style="cursor: pointer; font-size:20px!important;">B.S. in Statistical Data Science</p>
+                                </a><br/>
+                            </div>
+                            <p
+                                class="lead font-weight-light text-center"
+                                style="color:rgba(32, 75, 192, 0.788); cursor: default;">University of California, Davis</p>
+                            <br/>
+                        </div>
                         <div class="container container-depend" style="margin-bottom:-10px;">
                             <div
                                 class="temp"

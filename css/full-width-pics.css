@@ -23,7 +23,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: 0 4px 0 4px!important;
+        margin: 0 4px 0 4px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -41,7 +41,7 @@ p {
         height: 225px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     .bg-image-full {
         max-width: auto!important;
@@ -75,7 +75,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -105,7 +105,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -131,7 +131,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: 0 4px 0 4px!important;
+        margin: 0 4px 0 4px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -192,7 +192,7 @@ p {
         height: 210px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     .col-width {
         max-width: 200px!important;
@@ -231,7 +231,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -261,7 +261,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -281,7 +281,7 @@ p {
         align-content: space-between!important;
         max-width: 320px!important;
         justify-content: space-between!important;
-        margin: 0 12px 0 0!important;
+        margin: 0 12px 0 0!important !important;
     }
 }
 
@@ -303,7 +303,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -353,7 +353,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -383,7 +383,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -403,7 +403,7 @@ p {
         align-content: space-between!important;
         max-width: 375px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
+        margin: 0 10px 0 0!important !important;
     }
 }
 
@@ -475,7 +475,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -505,7 +505,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -525,7 +525,7 @@ p {
         align-content: space-between!important;
         max-width: 415px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
+        margin: 0 10px 0 0!important !important;
     }
 }
 
@@ -537,6 +537,7 @@ p {
     .card-width {
         max-width: 425px!important;
         border-radius: 17px!important;
+        margin-top: 20px!important;
     }
     .card-width-body {
         max-width: 600px!important;
@@ -544,7 +545,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: -5px 7px -5px 7px!important;
+        margin: -5px 7px -5px 7px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -563,7 +564,10 @@ p {
         height: 250px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
+    }
+    .autoIMG:hover {
+        transform: scale(1.14, 1.14)!important;
     }
     .col-width {
         max-width: 500px!important;
@@ -610,6 +614,13 @@ p {
         -webkit-transition: all 0.15s ease-in-out;
         -moz-transition: all 0.15s ease-in-out;
         -o-transition: all 0.15s ease-in-out;
+    }
+    img.icons {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 20px!important;
+        height: auto!important;
     }
     .aboutContainer {
         float: unset;
@@ -681,7 +692,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover;
@@ -733,7 +744,7 @@ p {
         align-content: space-between!important;
         max-width: 320px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
+        margin: 0 10px 0 0!important !important;
     }
 }
 
@@ -787,7 +798,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -817,7 +828,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -837,7 +848,7 @@ p {
         align-content: space-between!important;
         max-width: 360px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
+        margin: 0 10px 0 0!important !important;
     }
 }
 
@@ -892,7 +903,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -922,7 +933,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -942,7 +953,7 @@ p {
         align-content: space-between!important;
         max-width: 360px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
+        margin: 0 10px 0 0!important !important;
     }
 }
 
@@ -997,7 +1008,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -1027,7 +1038,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -1047,7 +1058,7 @@ p {
         align-content: space-between!important;
         max-width: 411px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
+        margin: 0 10px 0 0!important !important;
     }
 }
 /* Landscape */
@@ -1104,7 +1115,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -1134,7 +1145,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -1154,7 +1165,7 @@ p {
         align-content: space-between!important;
         max-width: 360px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
+        margin: 0 10px 0 0!important !important;
     }
 }
 
@@ -1209,7 +1220,7 @@ p {
         flex-flow: row wrap!important;
         justify-content: center!important;
         align-content: center!important;
-        padding: 10px 0 10px 0!important;
+        padding: 10px 0 10px 0!important !important;
     }
     img.skills {
         background-size: cover!important;
@@ -1239,7 +1250,7 @@ p {
         background-attachment: fixed!important;
         max-width: 80%!important;
         max-height: 65px!important;
-        margin: 20px 10px 10px!important;
+        margin: 20px 10px 10px!important !important;
         transition: all 0.15s ease-in-out!important;
         -webkit-transition: all 0.15s ease-in-out!important;
         -moz-transition: all 0.15s ease-in-out!important;
@@ -1259,7 +1270,7 @@ p {
         align-content: space-between!important;
         max-width: 411px!important;
         justify-content: space-between!important;
-        margin: 0 10px 0 0!important;
+        margin: 0 10px 0 0!important !important;
     }
 }
 /* Landscape */
@@ -1280,7 +1291,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: -5px 7px -5px 7px!important;
+        margin: -5px 7px -5px 7px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -1299,7 +1310,7 @@ p {
         height: 250px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     .col-width {
         max-width: 200px!important;
@@ -1323,7 +1334,7 @@ p {
         align-content: space-between!important;
         max-width: 768px!important;
         justify-content: space-between!important;
-        margin: 0 12px 0 0!important;
+        margin: 0 12px 0 0!important !important;
     }
 }
 
@@ -1342,7 +1353,7 @@ p {
         border-radius: 13px!important;
     }
     div.temp > div {
-        margin: -5px 7px -5px 7px!important;
+        margin: -5px 7px -5px 7px!important !important;
     }
     div > a.btnStyle {
         text-rendering: auto;
@@ -1361,7 +1372,7 @@ p {
         height: 260px!important;
         border-radius: 50%!important;
         transition: all 0.15s ease-in-out!important;
-        margin: 0 auto!important;
+        margin: 0 auto!important !important;
     }
     .col-width {
         max-width: 200px!important;
@@ -1385,7 +1396,7 @@ p {
         align-content: space-between!important;
         max-width: 1024px!important;
         justify-content: space-between!important;
-        margin: 0 12px 0 0!important;
+        margin: 0 12px 0 0!important !important;
     }
 }
 
@@ -1440,33 +1451,6 @@ p {
 div.temp > div {
     margin: -5px 7px;
 }
-
-
-.statistical {
-    transition:0.3s!important; 
-    -webkit-transition: 0.3s!important;
-    -moz-transition: 0.3s!important;
-    -o-transition: 0.3s!important;
-}
-.statistical:after {
-    content: ''!important;
-    width: 0px!important;
-    height: .1px!important;
-    display: block!important;
-    padding: -15px 0 -15px 0!important;
-    margin-bottom: -30px!important;
-    align-content: right!important;
-    background: black!important;
-    transition: 300ms!important;
-}
-.statistical:hover:after {
-    width: 90%;
-}
-.statistical:hover {
-    color: rgb(144, 185, 240);
-    transition:.1s ease-in-out!important; 
-}
-
 
 .caption {
     position: absolute;
@@ -1534,7 +1518,7 @@ div.bg-image-full > div.middle-center-container > div.skill-well {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    padding: 10px 0 10px 0!important;
+    padding: 10px 0 10px 0!important !important;
 }
 
 .col-width {
@@ -1545,7 +1529,7 @@ div.bg-image-full > div.middle-center-container > div.skill-well {
 
 div#container {
     max-width: 1000px!important;
-    margin: 0 0 25px 0!important;
+    margin: 0 0 25px 0!important !important;
     font-size: 17px;
     cursor: default;
     background-color: rgba(60,60,60,.34);
@@ -1692,4 +1676,30 @@ a.btnStyle:hover {
     -webkit-webkit: transition duration 0.4s!important;
     -moz-transition: transition duration 0.4s!important;
     -o-transition: transition duration 0.4s!important;
+}
+
+a.statistical {
+    text-decoration: none!important;
+    color: rgba(0,0,0,.4)!important;
+    z-index: 1!important;
+}
+a.statistical:before {
+    content: ""!important;
+    display: inline-flex;
+    position: relative!important;
+    width:83%!important;
+    height: 1px!important;
+    bottom: 0!important;
+    left: 0!important;
+    top: 37px!important;
+    background: rgb(122, 218, 133)!important;
+    visibility: hidden!important;
+    border-radius: 5px!important;
+    transform: scaleX(0)!important;
+    transition: 0.25s linear!important;
+}
+a.statistical:focus:before,
+a.statistical:hover:before {
+    visibility: visible!important;
+    transform: scaleX(1)!important;
 }
