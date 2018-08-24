@@ -558,7 +558,7 @@ p {
     }
     .bg-image-full {
         max-width: auto!important;
-        height: 700px!important;
+        height: 715px!important;
         position: relative;
     }
     img.skills {
@@ -1488,7 +1488,7 @@ span.border {
 
 .bg-image-full {
     max-width: auto;
-    height: 700px!important;
+    height: 700px;
     position: relative;
 }
 div.middle-center-container {
