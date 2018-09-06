@@ -9,64 +9,16 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=yes">
         <meta name="description" content="Personal Portfolio">
         <meta name="author" content="MitchellRLayton">
-        <title>mrlayton</title>
+        <title>Mitchell Layton</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- Script for going to About Me -->
-        <script>
-            $(document).ready(function () {
-                // Add smooth scrolling to all links
-                $("a").on('click', function (event) {
-
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-
-                        // Store hash
-                        var hash = this.hash;
-
-                        // Using jQuery's animate() method to add smooth page scroll The optional number
-                        // (800) specifies the number of milliseconds it takes to scroll to the
-                        // specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash)
-                                .offset()
-                                .top
-                        }, 800, function () {
-
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
-            });
-        </script>
-
-        <!-- Script for going to top -->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.scrollup').click(function (event) {
-                    event.preventDefault();
-                    $("html, body").animate({
-                        scrollTop: 0
-                    }, 600);
-                });
-            });
-        </script>
-        <!--===============================================================================================-->
-        <link href="css/full-width-pics.css" rel="stylesheet">
-        <link
-            rel="stylesheet"
-            href="https://mitchellrlayton.com/css/full-width-pics.css">
+        <!-- <link rel="stylesheet" href="https://mitchellrlayton.com/styles.less"> -->
         <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
         <link rel="icon" href="./images/iconBolt2.png">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!--===============================================================================================-->
         <link rel="icon" type="image/png" href="./images/icons/favicon.ico"/>
@@ -93,53 +45,43 @@
         <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="./ContactForm/css/main.css">
         <link rel="stylesheet" type="text/css" href="./ContactForm/css/util.css">
-        <!--===============================================================================================-->
-        <style>
-            #navbar {
-                position: fixed;
-                /* Make it stick/fixed */
-                top: 0;
-                /* Stay on top */
-                width: 100%;
-                height: auto;
-                /* Full width */
-                background-color: rgba(205, 212, 214, 0.9)!important;
-            }
-        </style>
-        <script>
-            $('.btn').mouseup(function ()onMouseDown = {
-                e => e.preventDefault()
-            })
-        </script>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+
+        <!-- jQuery & paroller -->
+        <script src="jquery/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- less compiled styles.css css -->
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="./parallax.js-1.5.0/parallax.js"></script>
+        <script src="./jquery/jquery.flip.js"></script>
+        <script src='http://dragon.deparadox.com/drag-on.js'></script>
 
     </head>
 
     <body id="top">
-
         <!-- Navigation -->
-        <div>
-            <div
-                class="collapse fixed-top"
-                id="navbarToggleExternalContent"
-                style="margin-top:55px!important;">
-                <div class="bg-light p-4">
-                    <img
-                        src="./pics/mrlayton.png"
-                        style="width:100px!important; height:auto; margin-left: auto!important">
-                    <span class="text-muted">Thanks for visiting my personal website!</span>
-                    <ul class="navbar-nav ml-auto" style="margin-top: 16px!important;">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Mitchell_Resume.pdf" target="_blank">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="hobbies.html">Hobbies</a>
-                        </li>
-                    </ul>
+        <div class="navigation">
+            <div class="collapse fixed-top navbar-toggle" id="navbarToggleExternalContent">
+                <div class="bg-light p-4 text-center">
+                    <div align="center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Mitchell_Resume.pdf" target="_blank">Résumé</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hobbies.html">Hobbies</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <nav id="navbar" class="navbar navbar-nav navbar-light fixed-top">
@@ -153,27 +95,23 @@
                         aria-controls="navbarToggleExternalContent"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
-                        onclick="openNav()">
+                        onclick="openNav()"
+                        onscroll="hideNav()">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                 </div>
             </nav>
         </div>
-
         <!-- Header - set the background image for the header in the line below -->
         <header
-            class="py-5 bg-image-full"
-            style="background-image: url('./pics/tempIMG1.jpg'); margin-top: 2px!important;">
-            <div
-                class="py-5 card-width wrapper-shadow-backgrounds"
-                align="center"
-                style="margin-top:20px;background-color: rgb(248, 248, 248); margin-left: auto!important; margin-right: auto!important; border-radius: 17px">
-                <div
-                    style="display:flex stats; flex-flow:row wrap; justify-content: space-evenly;">
-                    <div class="panel-body stats">
+            class="py-5 parallax-window-header"
+            data-parallax="scroll"
+            data-image-src="./pics/tempIMG1.jpg">
+            <div class="py-5 card-width wrapper-shadow-backgrounds" align="center">
+                <div class="card-content">
+                    <div class="panel-body">
                         <div class="circle">
-                            <a href="#aboutMe"><img class="autoIMG" src="./pics/mrlayton.jpg" usemap="faceMap">
+                            <a id="face" href="#personal-note"><img class="my-picture" src="./pics/mrlayton.jpg">
                             </a>
                         </div>
                         <br/>
@@ -183,24 +121,19 @@
                                 class="lead text-center font-weight-normal text-dark"
                                 style="cursor: default;">Hi, I'm Mitchell Layton!</h2>
                             <hr/>
-                            <div style="margin-top:-30px!important;">
+                            <div class="degree">
                                 <a
                                     href="https://www.stat.ucdavis.edu/undergrad/major/statistical-data-science.html"
                                     target="_blank"
-                                    class="statistical"
-                                    style="cursor: default;">
-                                    <p style="cursor: pointer; font-size:20px!important;">B.S. in Statistical Data Science</p>
+                                    class="statistical">
+                                    <p>B.S. in Statistical Data Science</p>
                                 </a><br/>
                             </div>
-                            <p
-                                class="lead font-weight-light text-center"
-                                style="color:rgba(32, 75, 192, 0.788); cursor: default;">University of California, Davis</p>
+                            <p class="lead font-weight-light text-center">University of California, Davis</p>
                             <br/>
                         </div>
-                        <div class="container container-depend" style="margin-bottom:-10px;">
-                            <div
-                                class="temp"
-                                style="display:flex; flex-flow: row nowrap; align-content: center; justify-content: center;">
+                        <div class="container container-depend">
+                            <div class="buttons">
                                 <div>
                                     <a
                                         class="btn btn-outline-secondary btn-md btnStyle"
@@ -214,7 +147,7 @@
                                         href="./ContactForm/index.html"
                                         role="button">Contact</a>
                                 </div>
-                                <div class="last-child">
+                                <div>
                                     <a
                                         class="btn btn-outline-secondary btn-md btnStyle"
                                         href="https://github.com/MitchellRLayton"
@@ -227,167 +160,287 @@
                 </div>
             </div>
         </header>
-        <!-- Content section -->
-        <section id="aboutMe" class="py-5">
-            <div class="container">
-                <div
-                    class="container card-width-body"
-                    align="center"
-                    style="float:unset; text-align: left!important;">
-                    <div class="wrapper-shadow">
-                        <h1 class="border-bottom border-secondary" style="cursor: default;">About me</h1>
-                        <p>
-                            <br/>
-                            "To achieve great things, two things are needed; a plan, and not quite enough
-                            time." -Leonard Bernstein
-                        </p>
-                        <p>
-                            <br/>
-                        </p>
-                        <p>
-                            The intricacies of life are something I really enjoy in—whether it be the path
-                            along my self-learning musical journey or understanding new software
-                            technologies through personal projects—investing myself into such interests
-                            gives me confidence in being able to grow and succeed in any future work I that
-                            comes my way. Respective of my interests, I embrace opportunities that are
-                            presented to me with full force as I give my full appreciation towards that
-                            subject or job. As anyone with a bit of self pride and motivation come to
-                            understand, we want to be the best in our craft—embracing the many hurdles and
-                            challenges that are thrown our way that ultimately develops our abilities and
-                            resiliency.
-                            <br><br>
-                            In my experience, I have navigated the difficulties of life as a young and
-                            aspiring student—referring to student in the sense that I am always learning and
-                            mastering different sets of skills whether or not I am actually in an
-                            educational institution. Pursuing a B.S. in Statistical Data Science within the
-                            Statistics department at UC Davis has been a humbling and rewarding experience;
-                            learning challenging concepts and the rigorous theory of statistics,
-                            mathematics, and computer science while balancing my time with NCAA Division I
-                            -AA Football has extensively developed my tenacity and perseverance. The most
-                            valuable skills I’ve learned along my journey is time management, meeting tight
-                            deadlines, and having a consistent work ethic.
-                        </p>
-                    </div>
-                    <br><br>
-                    <div
-                        style="display:flex; flex-flow: row wrap; align-content: center; justify-content: center; margin-bottom: 25px;">
-                        <div style="width: 100%;">
-                            <img src="./pics/statistical.jpg" class="stats" style="width: 100%!important">
-                        </div>
-                    </div>
-                    <br><br>
-                    <div class="wrapper-shadow wrapper-shadow-width">
-                        <h3 class="border-bottom border-secondary">Experience</h3>
-                        <br>
-                        <p>
-                            As a student-athlete, I’ve been proactive at finding experience to bolster my
-                            resume through finding positions posted on job boards and applying like crazy.
-                            Both of the positions I've held during the summers of 2017 and 2018 were
-                            congruent with the some of the skills and tasks that I have learned in
-                            university—except these positions takes on a more business and customer approach
-                            to developing and solving problems.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="wrapper-shadow">
-                        <div style="display:inline-block; text-align: left;">
-                            <div style="width: 100%;">
-                                <img src="./pics/CaliforniaEnergyCommission.jpg" class="job">
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                        <h4 style="font-size: 20px!important;">SQL Developer & Database Analyst Intern | Sacramento, CA | June - August 2017</h4>
-                        <br>
-                        <p>
-                            The first major skill I developed at the Energy Commission was developing
-                            complex SQL queries and procedures to fulfill business requirements; it was the
-                            first experience I had in developing structured database schemas in a relational
-                            setting. This job provided me with a concrete understanding of data
-                            manipulation, aggregation, segmentation, and transformation within SQL
-                            databases. These skills were absorbed well as they served as my foundational
-                            understanding to programming and data processes before I partook in my primary
-                            data science coursework. Such coursework involved a heavy usage of both the
-                            Python and R programming languages to serve as my primary toolkit for scripting,
-                            data collection & visualization, and statistical/machine learning projects.
-                        </p>
-                    </div>
 
+        <section id="personal-note" class="py-5 mx-auto">
+            <div class="container">
+                <div>
+                    <h1 class="border-bottom border-secondary">A Personal Note</h1>
+                    <p>
+                        <hr/>
+                        <br/>
+                        "To achieve great things, two things are needed; a plan, and not quite enough
+                        time." -Leonard Bernstein
+                    </p>
+                    <p>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </p>
+                    <p>
+                        Activities with challenging and intricate characteristics are something that
+                        give me continuous joy—whether it be my developing my musical craft or learning
+                        new software technologies—applying myself into such interests furthers my
+                        confidence in being able to grow and succeed in any future task I pursue. While
+                        I may not have all of the answers or current abilities to perform a particular
+                        task, I know that I am very adaptable; learning things on the fly and applying
+                        myself are key values that I have predicated my experiences on.
+                        <br><br>
+                        Pursuing a B.S. in Statistical Data Science within the Statistics department at
+                        UC Davis has been a humbling and rewarding experience; learning challenging
+                        concepts and the rigorous theory of statistics, mathematics, and computer
+                        science while balancing my time with NCAA Division I -AA Football has developed
+                        my tenacity and perseverance. The most valuable skills I’ve learned along my
+                        journey is time management, meeting tight deadlines, and having a consistent
+                        work ethic. Some important lessons I've learned from my collegiate journey are
+                        building lasting relationships, believing in my own capabilities, and realizing
+                        my potential for growth. Thanks for taking a minute to read my bio! Feel free to
+                        contact me regarding any questions you may have.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="py-5 parallax-window-body-piano"
+                data-parallax="scroll"
+                data-image-src="./pics/piano2.jpg">
+            </div>
+
+            <div class="container">
+                <div>
+                    <h2 class="border-bottom border-secondary">Experience</h2>
+                    <br>
+                    <p>
+                        <br>
+                        As a student-athlete, I’ve been proactive at finding experience to bolster my
+                        resume by continuously applying to a variety of positions posted on job boards
+                        and company's career sections. Both of my previous positions held during the
+                        summers of 2017 and 2018 were congruent with certain skills required from
+                        university—except that these positions prepared me towards a more business and
+                        customer approache to project development and problem solving.
+                    </p>
                     <br>
                     <br>
                     <br>
-                    <div class="wrapper-shadow">
-                        <div style="display:inline-block; text-align: left;">
-                            <div style="width: 100%;">
-                                <img src="./pics/PGE.jpg" class="job">
+                    <div class="container">
+                        <div class="border-wrapper">
+                            <div
+                                class="parallax-simple"
+                                data-parallax="scroll"
+                                data-image-src="./pics/simple-blue.jpg"
+                                style="margin-top:-4px!important;"
+                                data-toggle="tooltip"
+                                data-placement="right"
+                                title="Scrollable">
+                                <div class="horizontal-scroll-wrapper">
+                                    <div id="column-1" class="card-column" onclick="loadSan()">
+                                        <div id="container-front" class="front">
+                                            <div class="mx-auto fix-image">
+                                                <img src="./pics/PGE.jpg" class="pge">
+                                            </div>
+                                            <h4 class="mx-auto fix-title-2">Data Analyst Intern</h4>
+                                            <div class="description mx-auto" style="margin-top:45px!important">
+                                                <h5 class="mx-auto">San Francisco, CA</h5>
+                                                <h5 class="mx-auto">June - August 2018</h5>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="container-back"
+                                            class="back"
+                                            style="overflow-y:scroll; overflow-x: hidden;">
+                                            <h2
+                                                class="border-bottom mx-auto"
+                                                style="padding:11px 0 0 10px!important; width: 100%!important;">Growth</h2>
+                                            <p id="San" style="margin-bottom:-70px!important;">
+                                                My most recent experience was at PG&E in San Francisco—working among a team that
+                                                was responsible for the collection and reporting of crucial company metrics.
+                                                Their biggest need was to create a new systematic approach to data collection
+                                                and reporting from the many different organizations within PG&E. This position
+                                                offered me an inclusive and thorough summer project: I learned of their
+                                                systematic function and role within the company, brainstormed, researched, and
+                                                provided insight towards new possible approaches, and carried out the
+                                                development of a prototyped web application. Major skills that I developed
+                                                throughout this internship were team communication, developing a web application
+                                                using frameworks (ASP.NET MVC), and others like like HTML, CSS, Javascript, and
+                                                relational database schema.
+                                                <br><br>Manager: Hayk Hovhannisyan | (415) 973-4717
+                                            </p>
+                                            <h2
+                                                class="border-bottom mx-auto"
+                                                style="padding:11px 0 0 10px!important; width: 100%!important;">Skills</h2>
+
+                                            <div class="skill-container" style="display:flex; flex-flow:column;">
+                                                <div class="mx-auto">
+                                                    <img src="./pics/ASPMVC.jpg" class="web">
+                                                </div>
+                                                <div class="mx-auto">
+                                                    <img src="./pics/bootstrap-stack.jpg" class="web">
+                                                </div>
+                                                <div class="mx-auto">
+                                                    <img src="./pics/sql.jpg" class="skills-small">
+                                                </div>
+                                                <div class="mx-auto">
+                                                    <img src="./pics/django.jpg" class="skills-small">
+                                                </div>
+                                                <div class="mx-auto">
+                                                    <img src="./pics/git.jpg" class="skills-small">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div id="column-2" class="card-column" onclick="loadWeb()">
+                                        <div id="container-front" class="front">
+                                            <div class="mx-auto ">
+                                                <img src="./pics/WebDesign.jpg" class="web">
+                                            </div>
+                                            <h4 class="mx-auto">Personal Website Development</h4>
+                                            <div class="description mx-auto">
+                                                <h5>Danville & Davis, CA</h5>
+                                                <h5>August - September 2018</h5>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="container-back"
+                                            class="back"
+                                            style="overflow-y:scroll; overflow-x: hidden;">
+                                            <h2
+                                                class="border-bottom mx-auto"
+                                                style="padding:11px 0 0 10px!important; width: 100%!important;">Motivation</h2>
+                                            <p id="Web" class="mx-auto" style="margin-bottom:-70px!important;">
+                                                As someone who loves learning new things, I thought it would be useful to learn
+                                                to develop a personal website. Not only will I learn valuable web development
+                                                skills, but it may lead to a show of my capabilites and willingness to learn. In
+                                                this project, I did not want to use any templates such as WordPress—instead—I
+                                                wanted to embark on this web development journey to test my design and user
+                                                experience abilities. My motivation to further my HTML, CSS, and Javascript
+                                                knowledge was produced from the web application I had build over the summer for
+                                                PG&E. My personal website became a very iterative process and was a fun side
+                                                project to take on in my spare time before I started my fall coursework. I would
+                                                love to hear from you about any additions or changes that could made to improve
+                                                this experience—so feel free to send me a message!
+                                            </p>
+                                            <h2
+                                                class="border-bottom mx-auto"
+                                                style="padding:11px 0 0 10px!important; width: 100%!important;">Skills</h2>
+                                            <div class="skill-container" style="display:flex; flex-flow:column;">
+                                                <div class="mx-auto">
+                                                    <img src="./pics/bootstrap-stack.jpg" class="web">
+                                                </div>
+                                                <div class="mx-auto">
+                                                    <img src="./pics/less-logo.jpg" class="pge">
+                                                </div>
+                                                <div class="mx-auto">
+                                                    <img src="./pics/HTML5_CSS_JavaScript.jpg" class="skills-small">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="column-3" class="card-column" onclick="loadDav()">
+                                        <div id="container-front" class="front">
+                                            <div class="mx-auto ">
+                                                <img src="./pics/Mitch_Monata_Game.jpg" class="mitchell">
+                                            </div>
+                                            <h4 class="mx-auto">Student-Athlete: NCAA Division I-AA Football</h4>
+                                            <div class="description mx-auto">
+                                                <h5 class="mx-auto">Davis, CA</h5>
+                                                <h5 class="mx-auto">January 2015 - December 2018</h5>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="container-back"
+                                            class="back"
+                                            style="overflow-y:scroll; overflow-x: hidden;">
+                                            <h2
+                                                class="border-bottom mx-auto"
+                                                style="padding:11px 0 0 10px!important; width: 100%!important;">Balance</h2>
+                                            <p id="Dav">
+                                                I am currently a football player for UC Davis under the NCAA Divison I-AA, where
+                                                we play under the FCS. As a part of the team, we are responsible for 30+ hours a
+                                                week of workouts, film review, practice, and traveling over the course of the
+                                                year—although the regiment settles down a little in the offseason. The most
+                                                valuable skills I've learned from being a part of this team is effective time
+                                                management, perseverance, consistent word ethic, team communication, and an
+                                                appreciation of the grind and the process. Being able to enjoy the journey—to
+                                                not take such big process for granted—is an important part of self development
+                                                and I've learned to appreciate my individual path. Despite any shortcomings, any
+                                                highs or lows, dissapointments, surprises, or exuberance, I can say that I've
+                                                given myself to the process of self development as a student athlete while among
+                                                great teammates and coaches that continually push me and others to newer and
+                                                greater heights.
+                                            </p>
+                                            <div class="skill-container" style="display:flex; flex-flow:column;">
+                                                <div class="mx-auto">
+                                                    <img src="./pics/time-management.jpg" class="web">
+                                                </div>
+                                                <div class="mx-auto">
+                                                    <img src="./pics/less-logo.jpg" class="pge">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="column-4" class="card-column" onclick="loadSac()">
+                                        <div id="container-front" class="front">
+                                            <div class="mx-auto fix-image">
+                                                <img src="./pics/sac_transparent.jpg" class="sacramento">
+                                            </div>
+                                            <h4 class="mx-auto fix-title-1">SQL Developer & Database Analyst Intern</h4>
+                                            <div class="description mx-auto" style="margin-top:20px!important;">
+                                                <h5 class="mx-auto">Sacramento, CA</h5>
+                                                <h5 class="mx-auto">June - August 2017</h5>
+                                            </div>
+                                        </div>
+                                        <div
+                                            id="container-back"
+                                            class="back"
+                                            style="overflow-y:scroll; overflow-x: hidden;">
+                                            <h2
+                                                class="border-bottom mx-auto"
+                                                style="padding:11px 0 0 10px!important; width: 100%!important;">Catalyst</h2>
+                                            <p id="Sac">
+                                                As my first programming job experience, I learned to develope complex SQL
+                                                queries and procedures to fulfill business requirements; it was the first
+                                                experience I had in developing structured database schemas in a relational
+                                                setting. This job provided me with a concrete understanding of data
+                                                manipulation, aggregation, segmentation, and transformation within SQL
+                                                databases. These skills served as my foundational understanding to programming
+                                                and data processes before I became more proficient in Python, R, and SQL
+                                                throughout the primary data science coursework to which those skills became my
+                                                primary toolkit for scripting, data collection & visualization, and
+                                                statistical/machine learning projects.
+                                                <br><br>Manager: Christine Awtrey
+                                                <br>(916) 651-1227
+                                                <br>Christine.Awtrey@energy.ca.gov
+                                            </p>
+                                            <h2
+                                                class="border-bottom mx-auto"
+                                                style="margin-top:-60px!important; padding: 0px 0 0 10px!important; width: 100%!important;">Skills</h2>
+                                            <div
+                                                class="skill-container"
+                                                style="display:flex; flex-flow:column; justify-content: center; align-content: center;">
+                                                <div class="mx-auto">
+                                                    <img src="./pics/sql.jpg" class="web">
+                                                </div>
+                                                <div class="mx-auto">
+                                                    <img src="./pics/relational.jpg" class="web">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <br>
-                        <br>
-                        <h4 style="font-size: 20px!important;">Data Analyst Intern | San Francisco, CA | June - August 2018</h4>
-                        <br>
-                        <p>
-                            My most recent experience was at PG&E in San Francisco—working among a team that
-                            was responsible for the collection and reporting of crucial company metrics.
-                            Their biggest need was to create a new systematic approach to data collection
-                            and reporting from the many different organizations within PG&E. This position
-                            offered me an inclusive and thorough summer project: I learned of their
-                            systematic function and role within the company, brainstormed, researched, and
-                            provided insight towards new possible approaches, and carried out the
-                            development of a prototyped web application. Major skills that I developed
-                            throughout this internship were team communication, developing a web application
-                            using frameworks (ASP.NET MVC), and others like like HTML, CSS, Javascript, and
-                            relational database schema.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="wrapper-shadow">
-                        <div style="display:inline-block; text-align: left;">
-                            <div style="width: 100%;">
-                                <img src="./pics/Mitch_Monata_Game.jpg" class="mitchell">
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                        <h4 style="font-size: 20px!important;">NCAA Division I-AA Football Player | Davis, CA | January 2015 - December 2018</h4>
-                        <br>
-                        <p>
-                            I am currently a football player for UC Davis under the NCAA Divison I-AA, where
-                            we play under the FCS. As a part of the team, we are responsible for 30+ hours a
-                            week of workouts, film review, practice, and traveling over the course of the
-                            year—although the regiment settles down a little in the offseason. The most
-                            valuable skills I've learned from being a part of this team is effective time
-                            management, perseverance, consistent word ethic, team communication, and an
-                            appreciation of the grind and the process. Being able to enjoy the journey—to
-                            not take such big process for granted—is an important part of self development
-                            and I've learned to appreciate my individual path. Despite any shortcomings, any
-                            highs or lows, dissapointments, surprises, or exuberance, I can say that I've
-                            given myself to the process of self development as a student athlete while among
-                            great teammates and coaches that continually push me and others to newer and
-                            greater heights.
-                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
         <div
-            class="py-5 bg-image-full"
-            align="center"
-            style="background-image: url('./pics/grunge.jpg');">
-            <div class="middle-center-container desktop-card-shadow">
-                <div>
-                    <h2 class="border-bottom border-secondary" style="margin:-22px 0 0 0;">Skills</h2>
-                </div>
-                <div
-                    class="well skill-well"
-                    align="center"
-                    style="background-color: rgb(255, 255, 255); margin-left: auto; margin-right: auto; border-radius: 17px">
-
+            class="py-5 parallax-window-footer"
+            data-parallax="scroll"
+            data-image-src="./pics/grunge.jpg">
+            <div class="mx-auto">
+                <h2 align="center" class="border border-bottom">Skills</h2>
+                <div class="well skill-well mx-auto" align="center">
                     <img src="./pics/python.jpg" class="skills">
                     <img src="./pics/R.jpg" class="skills-big">
                     <img src="./pics/sql.jpg" style="padding-left: 18px" class="skills">
@@ -398,24 +451,103 @@
                 </div>
             </div>
         </div>
-
-        <!-- Bootstrap core JavaScript -->
-        <script src="jquery/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script>
-            $(document).click(function (e) {
-                if (!$(e.target).is('.navbar')) {
-                    $('.collapse').collapse('hide');
-                }
-            });
-        </script>
-        <script>
-            $(document).scroll(function (e) {
-                if (!$(e.target).is('.navbar')) {
-                    $('.collapse').collapse('hide');
-                }
-            });
-        </script>
     </body>
+    <script>
+        $(document).ready(function () {
+            $('.scrollup').click(function (event) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+            });
+        });
 
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll The optional number
+                    // (800) specifies the number of milliseconds it takes to scroll to the
+                    // specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash)
+                            .offset()
+                            .top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+        // collapse the navbar on scroll
+        $(window).scroll(function () {
+            if ($(".navbar").offset().top > 50) {
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+            } else {
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            }
+        });
+
+        $("#column-1").flip({axis: 'x', trigger: 'click'});
+        function loadSan() {
+            var x = document.getElementById("San");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                x
+                    .classList
+                    .add("pointer");
+            }
+        }
+        $("#column-2").flip({axis: 'x', trigger: 'click'});
+        function loadWeb() {
+            var x = document.getElementById("Web");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                x
+                    .classList
+                    .add("pointer");
+            }
+        }
+        $("#column-3").flip({axis: 'x', trigger: 'click'});
+        function loadDav() {
+            var x = document.getElementById("Dav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                x
+                    .classList
+                    .add("pointer");
+            }
+        }
+        $("#column-4").flip({axis: 'x', trigger: 'click'});
+        function loadSac() {
+            var x = document.getElementById("Sac");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                x
+                    .classList
+                    .add("pointer");
+            }
+        }
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </html>

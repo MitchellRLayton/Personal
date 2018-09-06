@@ -1,0 +1,414 @@
+html {
+  width: 100%!important;
+}
+html body {
+  padding-top: 54px;
+  width: 100%;
+}
+html p,
+html h1,
+html h2,
+html h3,
+html h4 {
+  cursor: default;
+}
+html p {
+  font-size: 15px!important;
+}
+.pointer {
+  cursor: pointer!important;
+}
+.navigation .collapse {
+  margin-top: 55px!important;
+}
+.navigation #navbar {
+  position: fixed!important;
+  /* Make it stick/fixed */
+  top: 0!important;
+  /* Stay on top */
+  width: 100%!important;
+  height: auto!important;
+  /* Full width */
+  background-color: rgba(205, 212, 214, 0.9) !important;
+}
+div.circle > a > .my-picture {
+  border-radius: 50%!important;
+  transition: all 0.15s ease-in-out !important;
+  margin: 0 auto!important;
+}
+@media only screen and (min-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3), only screen and (min-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3), only screen and (min-width: 360px) and (max-device-width: 640px), only screen and (min-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 4), only screen and (min-width: 411px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 3), only screen and (min-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 4) {
+  div.circle > a > .my-picture {
+    width: 250px!important;
+    height: 250px!important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1200px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  div.circle > a > .my-picture {
+    width: 300px!important;
+    height: 300px!important;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  div.circle > a > .my-picture {
+    width: 280px!important;
+    height: 280px!important;
+  }
+}
+div.circle > a > .my-picture:after {
+  width: 120%!important;
+  height: 120%!important;
+  opacity: 0!important;
+  border-radius: 50%!important;
+  transition: all 0.3s ease-in-out !important;
+  margin: 0 auto!important;
+}
+div.circle > a > .my-picture:hover {
+  transform: scale(1.11, 1.11) !important;
+}
+header {
+  margin-top: 0px!important;
+}
+header .parallax-window-header {
+  /* The image used */
+  position: relative;
+  max-width: auto;
+  /* Set a specific height */
+  height: 723px!important;
+  margin-top: 2px!important;
+}
+header .wrapper-shadow-backgrounds {
+  background-color: black;
+  border-radius: 17px!important;
+  padding: 25px 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  height: auto;
+}
+header .card-width {
+  background-color: #f8f8f8 !important;
+  border-radius: 15px!important;
+  margin-top: 20px!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+@media only screen and (min-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  header .card-width {
+    width: 310px!important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3), only screen and (min-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3), only screen and (min-width: 360px) and (max-device-width: 640px), only screen and (min-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 4), only screen and (min-width: 411px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 3), only screen and (min-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 4) {
+  header .card-width {
+    width: 345px!important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1200px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  header .card-width {
+    width: 420px!important;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  header .card-width {
+    width: 465px!important;
+  }
+}
+header .card-width .card-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+header .card-width .card-content div.panel-body > div.transitions > div.degree {
+  margin-top: -30px !important;
+  margin-bottom: -30px !important;
+}
+header .card-width .card-content div.panel-body > div.transitions > div.degree a.statistical {
+  text-decoration: none!important;
+  color: rgba(0, 0, 0, 0.4) !important;
+  z-index: 1!important;
+  cursor: pointer!important;
+}
+header .card-width .card-content div.panel-body > div.transitions > div.degree a > p {
+  font-size: 20px !important;
+}
+header .card-width .card-content div.panel-body > div.transitions > div.degree a.statistical:before {
+  content: "" !important;
+  display: inline-flex;
+  position: relative!important;
+  width: 87%!important;
+  height: 28px!important;
+  bottom: 0!important;
+  left: 0!important;
+  top: 37px!important;
+  visibility: hidden!important;
+  border-radius: 5px!important;
+  transform: scaleX(0) !important;
+  transition: 0.25s linear !important;
+}
+header .card-width .card-content div.panel-body > div.transitions > div.degree a.statistical:focus:before,
+header .card-width .card-content div.panel-body > div.transitions > div.degree a.statistical:hover:before {
+  visibility: visible!important;
+  transform: scaleX(1) !important;
+  background: rgba(74, 177, 224, 0.388) !important;
+}
+header .card-width .card-content div.panel-body > div.transitions > p.lead {
+  font-size: 17px!important;
+  color: rgba(83, 135, 231, 0.8) !important;
+  cursor: default;
+}
+header .card-width .card-content div.panel-body > div.container-depend .buttons {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 97px) !important;
+  grid-row-gap: 0px!important;
+  grid-column-gap: 10px!important;
+  justify-content: center;
+}
+section {
+  height: 1600px!important;
+}
+section div {
+  display: flex!important;
+  flex-flow: row wrap!important;
+}
+section div div {
+  float: unset!important;
+  text-align: left!important;
+  margin-bottom: 60px!important;
+}
+section div.parallax-window-body-piano {
+  position: relative!important;
+  max-width: auto!important;
+  /* Set a specific height */
+  height: 200px!important;
+  margin-top: 2px!important;
+}
+section div.container {
+  width: 100%!important;
+  margin-top: 10px!important;
+}
+section div.container div {
+  margin-top: 18px!important;
+}
+section div.container div h2 {
+  background-color: white;
+  color: black;
+}
+section div.container div div.wrapper-shadow {
+  display: inline-block !important;
+  max-width: 255px!important;
+  background-color: white;
+  border-radius: 17px!important;
+  padding: 25px 35px!important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  max-height: 500px!important;
+}
+section div.container div div.container .border-wrapper {
+  display: none;
+}
+section div.container div div.container .parallax-simple {
+  position: relative!important;
+  height: 500px!important;
+  background-repeat: no-repeat !important;
+  background-size: cover!important;
+  box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.5) !important;
+}
+section div.container div div.container .horizontal-scroll-wrapper {
+  position: relative!important;
+  display: flex!important;
+  max-width: inherit!important;
+  padding-left: 45px!important;
+  padding-top: 0px!important;
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px), only screen and (min-device-width: 1200px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  section div.container div div.container .horizontal-scroll-wrapper {
+    width: 1100px!important;
+    flex-flow: row nowrap!important;
+    overflow-x: scroll!important;
+    overflow-y: hidden!important;
+    flex-basis: 1400px!important;
+    height: 500px!important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  section div.container div div.container .horizontal-scroll-wrapper {
+    width: 367px!important;
+    flex-flow: column nowrap!important;
+    overflow-x: hidden!important;
+    overflow-y: scroll!important;
+    flex-basis: 367px!important;
+    height: 500px!important;
+  }
+}
+section div.container div div.container .horizontal-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+section div.container div div.container div.horizontal-scroll-wrapper > div.card-column {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: -10px !important;
+  padding-right: 60px!important;
+  height: 500px!important;
+  width: auto!important;
+}
+section div.container div div.container div#container-front,
+section div.container div div.container div#container-back {
+  width: 300px!important;
+  height: 400px !important;
+  cursor: pointer!important;
+  background-color: #ffffff !important;
+  border-radius: 6px!important;
+  box-shadow: 0 4px 8px 0 rgba(35, 35, 35, 0.5) !important;
+  transition: 0.15s ease-in-out !important;
+  -webkit-transition: 0.15s ease-in-out !important;
+  -moz-transition: 0.15s ease-in-out !important;
+  -o-transition: 0.15s ease-in-out !important;
+}
+section div.container div div.container div#container-front h4,
+section div.container div div.container div#container-back h4 {
+  cursor: pointer!important;
+  margin-top: -47px !important;
+  color: rgba(56, 56, 56, 0.95) !important;
+  text-align: center!important;
+  font-weight: 500!important;
+  text-shadow: 1.2px 1.2px rgba(137, 178, 211, 0.418) !important;
+}
+section div.container div div.container div#container-front .fix-image,
+section div.container div div.container div#container-back .fix-image {
+  margin-top: 50px!important;
+}
+section div.container div div.container div#container-front .fix-title-1,
+section div.container div div.container div#container-back .fix-title-1 {
+  margin-top: 10px!important;
+}
+section div.container div div.container div#container-front .fix-title-2,
+section div.container div div.container div#container-back .fix-title-2 {
+  margin-top: 20px!important;
+}
+section div.container div div.container div#container-front div.description,
+section div.container div div.container div#container-back div.description {
+  display: flex!important;
+  flex-flow: column wrap!important;
+}
+section div.container div div.container div#container-front div > h5,
+section div.container div div.container div#container-back div > h5 {
+  cursor: pointer!important;
+  text-align: center;
+  font-size: 17px!important;
+}
+section div.container div div.container div#container-front p,
+section div.container div div.container div#container-back p {
+  display: none;
+  text-justify: inter-word;
+  text-align: left!important;
+  font-weight: 500!important;
+  color: black;
+  padding: 10px 30px 100px 18px!important;
+}
+section div.container div div.container div#container-front div.skill-container > div,
+section div.container div div.container div#container-back div.skill-container > div {
+  margin-top: -20px !important;
+}
+section div.container div div.container div#container-front div.skill-container > div:first-child,
+section div.container div div.container div#container-back div.skill-container > div:first-child {
+  margin-top: 15px!important;
+}
+section div.container div div.container div#container-front div.skill-container > div:last-child,
+section div.container div div.container div#container-back div.skill-container > div:last-child {
+  margin-bottom: -20px !important;
+}
+section div.container div div.container div#container-front:hover,
+section div.container div div.container div#container-back {
+  box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.5) !important;
+}
+section div.container div div.container div#container-front:hover::-webkit-scrollbar,
+section div.container div div.container div#container-back::-webkit-scrollbar {
+  display: none;
+}
+div.parallax-window-footer {
+  position: relative;
+}
+div.parallax-window-footer div {
+  width: 500px!important;
+}
+div.parallax-window-footer div h2 {
+  background-color: #ffffff !important;
+  margin: -22px 0 0 0 !important;
+  border-top-right-radius: 5px!important;
+  border-top-left-radius: 5px!important;
+}
+div.parallax-window-footer div div {
+  background-color: #ffffff !important;
+  border-bottom-right-radius: 5px!important;
+  border-bottom-left-radius: 5px!important;
+}
+img.mitchell {
+  background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed!important;
+  max-width: auto !important;
+  border-radius: 3px!important;
+  max-height: 180px!important;
+}
+img.web {
+  background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed!important;
+  max-width: auto !important;
+  border-radius: 3px!important;
+  max-height: 180px!important;
+}
+img.pge {
+  background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed!important;
+  max-width: 260px!important;
+  max-height: 87px!important;
+}
+img.sacramento {
+  background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed!important;
+  max-width: 100%!important;
+  max-height: 100px!important;
+}
+img.skills {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 90%;
+  max-height: 90px;
+  margin: 20px 10px 10px;
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+img.skills-small {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  max-height: 140px;
+  margin: 20px 10px 10px;
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+img.skills-big {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 80%;
+  max-height: 65px;
+  margin: 20px 10px 10px;
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+img.icons {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 20px!important;
+  height: auto!important;
+}
