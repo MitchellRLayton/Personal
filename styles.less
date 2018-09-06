@@ -10,13 +10,25 @@ p, h1, h2, h3, h4 {
 }
 p {
     font-size: 15px!important;
-    color: black!important;
 }
 
 .pointer {
     cursor: pointer!important;
 }
 
+.parallax { 
+    /* The image used */
+    background-image: url("./pics/piano2.jpg");
+
+    /* Set a specific height */
+    height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @white-grey: rgba(205, 212, 214, 0.9);
 @off-white: rgb(248, 248, 248);
@@ -193,7 +205,7 @@ section {
             margin-bottom: 60px!important;
         }
     }
-    div.parallax-window-body-piano {
+    div.parallax-window-body-fjord {
         position: relative!important;
         max-width: auto!important;
 
@@ -340,7 +352,7 @@ section {
 }
 
 div.parallax-window-footer {
-    position: relative;
+
     div {
         width: 500px!important;
         h2 {
@@ -355,6 +367,15 @@ div.parallax-window-footer {
             border-bottom-left-radius: 5px!important;
         }
 
+    }
+}
+
+section > div.hobby-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: minmax(200px, auto);
+    @media @laptop, @laptop-retina, @desktop, @desktop-xl {
+        width: 1105px!important;
     }
 }
 

@@ -14,10 +14,20 @@ h4 {
 }
 p {
   font-size: 15px!important;
-  color: black!important;
 }
 .pointer {
   cursor: pointer!important;
+}
+.parallax {
+  /* The image used */
+  background-image: url("./pics/piano2.jpg");
+  /* Set a specific height */
+  height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .navigation .collapse {
   margin-top: 55px!important;
@@ -175,7 +185,7 @@ section div div {
   text-align: left!important;
   margin-bottom: 60px!important;
 }
-section div.parallax-window-body-piano {
+section div.parallax-window-body-fjord {
   position: relative!important;
   max-width: auto!important;
   /* Set a specific height */
@@ -332,9 +342,6 @@ section div.container div div.container div#container-front:hover::-webkit-scrol
 section div.container div div.container div#container-back::-webkit-scrollbar {
   display: none;
 }
-div.parallax-window-footer {
-  position: relative;
-}
 div.parallax-window-footer div {
   width: 500px!important;
 }
@@ -348,6 +355,16 @@ div.parallax-window-footer div div {
   background-color: #ffffff !important;
   border-bottom-right-radius: 5px!important;
   border-bottom-left-radius: 5px!important;
+}
+section > div.hobby-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-auto-rows: minmax(200px, auto);
+}
+@media only screen and (min-device-width: 1200px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  section > div.hobby-grid {
+    width: 1105px!important;
+  }
 }
 img.mitchell {
   background-size: cover!important;
