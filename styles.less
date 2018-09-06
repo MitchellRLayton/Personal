@@ -49,20 +49,13 @@ p {
 @desktop: ~"only screen and (min-width: 950px) and (max-width: 1128px)";
 @desktop-xl: ~"only screen and (min-width: 1129px)";
 
-.navigation {
-    .collapse {
-        margin-top: 55px!important;
-    }
-    #navbar {
-        position: fixed!important;
-        /* Make it stick/fixed */
-        top: 0!important;
-        /* Stay on top */
-        width: 100%!important;
-        height: auto!important;
-        /* Full width */
-        background-color: rgba(205, 212, 214, 0.9)!important;
-    }
+.navbar {
+    position: fixed!important;
+    /* Make it stick/fixed */
+    top: 0!important;
+    /* Stay on top */
+    width: 100%!important;
+    height: auto!important;
 }
 // Face shot main picture
 div.circle > a > .my-picture {
@@ -370,12 +363,66 @@ div.parallax-window-footer {
     }
 }
 
-section > div.hobby-grid {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-auto-rows: minmax(200px, auto);
+div.hobby-grid {
+    margin-top: 40px!important;
+    margin-bottom: 40px!important;
+    display: grid!important;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: minmax(200px, auto)!important;
+    border-bottom: 2px solid grey!important;
+    border-left: 2px solid grey!important;
     @media @laptop, @laptop-retina, @desktop, @desktop-xl {
         width: 1105px!important;
+    }
+    .hobby-1 {
+        grid-column-start: 1!important; 
+        grid-column-end: 4!important; 
+        grid-row-start: 1!important; 
+        grid-row-end: 3!important; 
+        background-color: beige!important;
+        border-top: 2px solid grey!important;
+        border-right: 2px solid grey!important; 
+    }
+    .hobby-2 {
+        grid-column-start: 1!important; 
+        grid-column-end: 4!important; 
+        grid-row-start: 3!important; 
+        grid-row-end: 5!important;       
+        background-color: beige!important;
+        border-top: 2px solid grey!important;
+        border-right: 2px solid grey!important; 
+        }
+    .hobby-3 {
+        grid-column-start: 1!important; 
+        grid-row-start: 5!important; 
+        grid-row-end: 7!important; 
+        background-color: beige!important;
+        border-top: 2px solid grey!important;
+        border-right: 2px solid grey!important; 
+    }
+    .hobby-4 {
+        grid-column-start: 2!important; 
+        grid-row-start: 5!important; 
+        grid-row-end: 7!important;
+        background-color: beige!important;
+        border-top: 2px solid grey!important;
+        border-right: 2px solid grey!important;
+    }
+    .hobby-5 {
+        grid-column-start: 2!important; 
+        grid-row-start: 5!important; 
+        grid-row-end: 7!important; 
+        background-color: beige!important;
+        border-top: 2px solid grey!important;
+        border-right: 2px solid grey!important;
+    }
+    .hobby-6 {
+        grid-column-start: 3; 
+        grid-row-start: 5; 
+        grid-row-end: 7;  
+        background-color: beige!important;
+        border-top: 2px solid grey;
+        border-right: 2px solid grey;
     }
 }
 
