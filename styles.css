@@ -164,6 +164,7 @@ header .card-width .card-content div.panel-body > div.container-depend .buttons 
 }
 section {
   height: 1600px!important;
+  margin-top: -25px !important;
 }
 section div {
   display: flex!important;
@@ -178,12 +179,12 @@ section div.parallax-window-body-piano {
   position: relative!important;
   max-width: auto!important;
   /* Set a specific height */
-  height: 200px!important;
+  height: 220px!important;
   margin-top: 2px!important;
 }
 section div.container {
   width: 100%!important;
-  margin-top: 10px!important;
+  margin-top: 35px!important;
 }
 section div.container div {
   margin-top: 18px!important;
@@ -201,9 +202,14 @@ section div.container div div.wrapper-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   max-height: 500px!important;
 }
+section div.container div div.container {
+  margin-top: 35px!important;
+}
 section div.container div div.container .parallax-simple {
+  background-image: url("./pics/simple-blue.jpg");
   position: relative!important;
-  height: 500px!important;
+  margin-left: -15px !important;
+  height: 475px!important;
   background-repeat: no-repeat !important;
   background-size: cover!important;
   box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.5) !important;
@@ -217,7 +223,7 @@ section div.container div div.container .horizontal-scroll-wrapper {
 }
 @media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px), only screen and (min-device-width: 1200px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   section div.container div div.container .horizontal-scroll-wrapper {
-    width: 1100px!important;
+    width: 1105px!important;
     flex-flow: row nowrap!important;
     overflow-x: scroll!important;
     overflow-y: hidden!important;
@@ -320,7 +326,7 @@ section div.container div div.container div#container-back div.skill-container:l
 }
 section div.container div div.container div#container-front:hover,
 section div.container div div.container div#container-back {
-  box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.665) !important;
 }
 section div.container div div.container div#container-front:hover::-webkit-scrollbar,
 section div.container div div.container div#container-back::-webkit-scrollbar {

@@ -53,8 +53,8 @@
         <script src="js/bootstrap.bundle.min.js"></script>
 
         <!-- less compiled styles.css css -->
-        <!-- <link rel="stylesheet" type="text/css" href="./styles.css"> -->
-        <link rel="stylesheet" href="https://mitchellrlayton.com/styles.css">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <!-- <link rel="stylesheet" href="https://mitchellrlayton.com/styles.css"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="./parallax.js-1.5.0/parallax.js"></script>
         <script src="./jquery/jquery.flip.js"></script>
@@ -86,7 +86,7 @@
             </div>
             <nav id="navbar" class="navbar navbar-nav navbar-light fixed-top">
                 <div class="container">
-                    <a class="navbar-brand scrollup" href="#">mitchellrlayton.com</a>
+                    <a class="navbar-brand" href="#top" style="scroll-behavior: smooth!important;">mitchellrlayton.com</a>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -200,7 +200,7 @@
             <div
                 class="py-5 parallax-window-body-piano"
                 data-parallax="scroll"
-                data-image-src="./pics/piano2.jpg"></div>
+                data-image-src="./pics/geiranger-fjord.jpg"></div>
 
             <div class="container">
                 <div>
@@ -221,8 +221,6 @@
                     <div class="container">
                         <div
                             class="parallax-simple"
-                            data-parallax="scroll"
-                            data-image-src="./pics/simple-blue.jpg"
                             style="margin-top:-4px!important;"
                             data-toggle="tooltip"
                             data-placement="right"
@@ -279,6 +277,9 @@
                                             </div>
                                             <div class="mx-auto">
                                                 <img src="./pics/git.jpg" class="skills-small">
+                                            </div>
+                                            <div class="mx-auto">
+                                                <img src="./pics/communication.jpg" class="skills-small">
                                             </div>
                                         </div>
 
@@ -462,15 +463,6 @@
         </div>
     </body>
     <script>
-        $(document).ready(function () {
-            $('.scrollup').click(function (event) {
-                event.preventDefault();
-                $("html, body").animate({
-                    scrollTop: 0
-                }, 600);
-            });
-        });
-
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {

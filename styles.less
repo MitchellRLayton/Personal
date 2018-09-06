@@ -182,6 +182,7 @@ header {
 
 section {
     height: 1600px!important;
+    margin-top: -25px!important;
     div {
         display: flex!important;
         flex-flow: row wrap!important;
@@ -197,12 +198,12 @@ section {
         max-width: auto!important;
 
         /* Set a specific height */
-        height: 200px!important;
+        height: 220px!important;
         margin-top: 2px!important;
     }
     div.container {
         width: 100%!important;
-        margin-top: 10px!important;
+        margin-top: 35px!important;
         div {
             margin-top: 18px!important;
             h2 {
@@ -223,9 +224,12 @@ section {
             }
 
             div.container {
+                margin-top: 35px!important;
                 .parallax-simple {
+                    background-image: url("./pics/simple-blue.jpg");
                     position: relative!important;
-                    height: 500px!important;
+                    margin-left:-15px!important;
+                    height: 475px!important;
                     background-repeat: no-repeat!important;
                     background-size: cover!important;
                     box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.50)!important;
@@ -235,7 +239,7 @@ section {
                     display: flex!important;
                     // CHANGE TO COLUMN FOR SMART PHONES
                     @media @desktop, @desktop-xl, @laptop, @laptop-retina {
-                        width: 1100px!important;
+                        width: 1105px!important;
                         flex-flow: row nowrap!important;
                         overflow-x: scroll!important;
                         overflow-y: hidden!important;
@@ -325,7 +329,7 @@ section {
                     }
                 }
                 div#container-front:hover, div#container-back {
-                    box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.50)!important;
+                    box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.665)!important;
                     &::-webkit-scrollbar{
                         display: none;
                     }
