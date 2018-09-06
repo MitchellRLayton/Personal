@@ -6,7 +6,7 @@ html {
     width: 100%!important;
 }
 p, h1, h2, h3, h4 {
-    cursor: text!important;
+    cursor: default!important;
 }
 p {
     font-size: 15px!important;
@@ -223,9 +223,6 @@ section {
             }
 
             div.container {
-                .border-wrapper {
-                    display: none;
-                }
                 .parallax-simple {
                     position: relative!important;
                     height: 500px!important;
@@ -242,7 +239,6 @@ section {
                         flex-flow: row nowrap!important;
                         overflow-x: scroll!important;
                         overflow-y: hidden!important;
-                        flex-basis: 1400px!important;                    
                         height: 500px!important;
                     }
                     @media @iPhoneX {
@@ -260,19 +256,24 @@ section {
                 .horizontal-scroll-wrapper::-webkit-scrollbar {
                     display: none;
                   }
-                div.horizontal-scroll-wrapper > div.card-column {
+                div.horizontal-scroll-wrapper > div#column-1,div#column-2,div#column-3,div#column-4 {
                     display: flex;
                     flex-flow: column wrap;
-                    padding-left: -10px!important;
-                    padding-right: 60px!important;
-                    height: 500px!important;
+                    cursor: pointer!important;
+                    margin-right: 60px!important;
+                    margin-left: -2px!important;
+                    padding-top: 1px!important;
+                    height: 400px!important;
                     width: auto!important;
+                    &:last-child {
+                        padding-right: 40px!important;
+                    }
                 } 
                 div#container-front, div#container-back {
                     @experience-card: 400px;
                     width:  300px!important;
                     height: @experience-card!important;
-                    cursor: pointer!important;
+                    margin: -1px 0px 0px 0px!important;
                     background-color: rgb(255, 255, 255)!important;
                     border-radius: 6px!important;
                     box-shadow: 0 4px 8px 0 rgba(35, 35, 35, 0.5)!important;

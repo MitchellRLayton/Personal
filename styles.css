@@ -10,7 +10,7 @@ h1,
 h2,
 h3,
 h4 {
-  cursor: text!important;
+  cursor: default!important;
 }
 p {
   font-size: 15px!important;
@@ -201,9 +201,6 @@ section div.container div div.wrapper-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   max-height: 500px!important;
 }
-section div.container div div.container .border-wrapper {
-  display: none;
-}
 section div.container div div.container .parallax-simple {
   position: relative!important;
   height: 500px!important;
@@ -224,7 +221,6 @@ section div.container div div.container .horizontal-scroll-wrapper {
     flex-flow: row nowrap!important;
     overflow-x: scroll!important;
     overflow-y: hidden!important;
-    flex-basis: 1400px!important;
     height: 500px!important;
   }
 }
@@ -241,19 +237,30 @@ section div.container div div.container .horizontal-scroll-wrapper {
 section div.container div div.container .horizontal-scroll-wrapper::-webkit-scrollbar {
   display: none;
 }
-section div.container div div.container div.horizontal-scroll-wrapper > div.card-column {
+section div.container div div.container div.horizontal-scroll-wrapper > div#column-1,
+section div.container div div.container div#column-2,
+section div.container div div.container div#column-3,
+section div.container div div.container div#column-4 {
   display: flex;
   flex-flow: column wrap;
-  padding-left: -10px !important;
-  padding-right: 60px!important;
-  height: 500px!important;
+  cursor: pointer!important;
+  margin-right: 60px!important;
+  margin-left: -2px !important;
+  padding-top: 1px!important;
+  height: 400px!important;
   width: auto!important;
+}
+section div.container div div.container div.horizontal-scroll-wrapper > div#column-1:last-child,
+section div.container div div.container div#column-2:last-child,
+section div.container div div.container div#column-3:last-child,
+section div.container div div.container div#column-4:last-child {
+  padding-right: 40px!important;
 }
 section div.container div div.container div#container-front,
 section div.container div div.container div#container-back {
   width: 300px!important;
   height: 400px !important;
-  cursor: pointer!important;
+  margin: -1px 0px 0px 0px !important;
   background-color: #ffffff !important;
   border-radius: 6px!important;
   box-shadow: 0 4px 8px 0 rgba(35, 35, 35, 0.5) !important;
