@@ -5,15 +5,16 @@ html body {
   padding-top: 54px;
   width: 100%;
 }
-html p,
-html h1,
-html h2,
-html h3,
-html h4 {
-  cursor: default;
+p,
+h1,
+h2,
+h3,
+h4 {
+  cursor: text!important;
 }
-html p {
+p {
   font-size: 15px!important;
+  color: black!important;
 }
 .pointer {
   cursor: pointer!important;
@@ -151,7 +152,7 @@ header .card-width .card-content div.panel-body > div.transitions > div.degree a
 header .card-width .card-content div.panel-body > div.transitions > p.lead {
   font-size: 17px!important;
   color: rgba(83, 135, 231, 0.8) !important;
-  cursor: default;
+  cursor: text!important;
 }
 header .card-width .card-content div.panel-body > div.container-depend .buttons {
   width: auto;
@@ -302,16 +303,12 @@ section div.container div div.container div#container-back p {
   color: black;
   padding: 10px 30px 100px 18px!important;
 }
-section div.container div div.container div#container-front div.skill-container > div,
-section div.container div div.container div#container-back div.skill-container > div {
-  margin-top: -20px !important;
+section div.container div div.container div#container-front div.skill-container:first-child,
+section div.container div div.container div#container-back div.skill-container:first-child {
+  margin-top: 205px!important;
 }
-section div.container div div.container div#container-front div.skill-container > div:first-child,
-section div.container div div.container div#container-back div.skill-container > div:first-child {
-  margin-top: 15px!important;
-}
-section div.container div div.container div#container-front div.skill-container > div:last-child,
-section div.container div div.container div#container-back div.skill-container > div:last-child {
+section div.container div div.container div#container-front div.skill-container:last-child,
+section div.container div div.container div#container-back div.skill-container:last-child {
   margin-bottom: -20px !important;
 }
 section div.container div div.container div#container-front:hover,
