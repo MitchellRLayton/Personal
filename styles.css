@@ -376,10 +376,14 @@ img.skills {
   max-width: 90%;
   max-height: 90px;
   margin: 20px 10px 10px;
-  transition: all 0.15s ease-in-out;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
+}
+img.skills-very-small {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
+  max-height: 180px;
+  margin: 20px 10px 10px;
 }
 img.skills-small {
   background-size: cover;
@@ -388,10 +392,6 @@ img.skills-small {
   max-width: 100%;
   max-height: 140px;
   margin: 20px 10px 10px;
-  transition: all 0.15s ease-in-out;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
 }
 img.skills-big {
   background-size: cover;
@@ -400,10 +400,6 @@ img.skills-big {
   max-width: 80%;
   max-height: 65px;
   margin: 20px 10px 10px;
-  transition: all 0.15s ease-in-out;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
 }
 img.icons {
   background-size: cover;
