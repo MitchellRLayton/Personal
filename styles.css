@@ -37,6 +37,10 @@ p {
   width: 100%!important;
   height: auto!important;
 }
+.hover-both:hover,
+.hover-both:hover > #icon {
+  color: red!important;
+}
 div.circle > a > .my-picture {
   border-radius: 50%!important;
   transition: all 0.15s ease-in-out !important;
