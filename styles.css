@@ -37,8 +37,10 @@ p {
   width: 100%!important;
   height: auto!important;
 }
-.hover-both:hover,
-.hover-both:hover > #icon {
+.navbar > div > ul {
+  margin-top: 9px!important;
+}
+.navbar > div > ul li.hover-both > a.nav-link:hover {
   color: red!important;
 }
 div.circle > a > .my-picture {
@@ -52,16 +54,16 @@ div.circle > a > .my-picture {
     height: 250px!important;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1200px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   div.circle > a > .my-picture {
     width: 300px!important;
     height: 300px!important;
   }
 }
-@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+@media only screen and (min-width: 1824px) {
   div.circle > a > .my-picture {
-    width: 280px!important;
-    height: 280px!important;
+    width: 350px!important;
+    height: 350px!important;
   }
 }
 div.circle > a > .my-picture:after {
@@ -110,14 +112,14 @@ header .card-width {
     width: 345px!important;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1200px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   header .card-width {
-    width: 420px!important;
+    width: 450px!important;
   }
 }
-@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+@media only screen and (min-width: 1824px) {
   header .card-width {
-    width: 465px!important;
+    width: 515px!important;
   }
 }
 header .card-width .card-content {
@@ -172,8 +174,17 @@ header .card-width .card-content div.panel-body > div.container-depend .buttons 
   justify-content: center;
 }
 section {
-  height: 1600px!important;
   margin-top: -25px !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  section {
+    height: 1600px!important;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  section {
+    height: 2000px!important;
+  }
 }
 section div {
   display: flex!important;
@@ -230,7 +241,7 @@ section div.container div div.container .horizontal-scroll-wrapper {
   padding-left: 45px!important;
   padding-top: 0px!important;
 }
-@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px), only screen and (min-device-width: 1200px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media only screen and (min-width: 1824px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   section div.container div div.container .horizontal-scroll-wrapper {
     width: 1105px!important;
     flex-flow: row nowrap!important;
@@ -364,7 +375,7 @@ div.hobby-grid {
   border-bottom: 2px solid grey!important;
   border-left: 2px solid grey!important;
 }
-@media only screen and (min-device-width: 1200px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+@media only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), only screen and (min-width: 1824px) {
   div.hobby-grid {
     width: 1105px!important;
   }
