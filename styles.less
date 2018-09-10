@@ -31,6 +31,28 @@ p, h1, h2, h3, h4 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+div > a.btnStyle {
+    text-rendering: auto;
+    letter-spacing: 0.8px;
+    transition: all 0.8s ease-out!important;
+    height: auto!important;
+    font-size: auto!important;
+    -webkit-transition: all 0.8s ease-out!important;
+    -moz-transition: all 0.8s ease-out!important;
+    -o-transition: all 0.8s ease-out!important;
+}
+a.btnStyle:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+a.btnStyle:hover {
+    color: rgb(217,217,217)!important;
+    transition: 0.4s!important;
+    -webkit-webkit: transition duration 0.4s!important;
+    -moz-transition: transition duration 0.4s!important;
+    -o-transition: transition duration 0.4s!important;
+}
 
 @white-grey: rgba(205, 212, 214, 0.9);
 @off-white: rgb(248, 248, 248);

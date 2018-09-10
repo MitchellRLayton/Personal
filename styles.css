@@ -29,6 +29,28 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+div > a.btnStyle {
+  text-rendering: auto;
+  letter-spacing: 0.8px;
+  transition: all 0.8s ease-out !important;
+  height: auto!important;
+  font-size: auto!important;
+  -webkit-transition: all 0.8s ease-out !important;
+  -moz-transition: all 0.8s ease-out !important;
+  -o-transition: all 0.8s ease-out !important;
+}
+a.btnStyle:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+a.btnStyle:hover {
+  color: #d9d9d9 !important;
+  transition: 0.4s !important;
+  -webkit-webkit: transition duration 0.4s !important;
+  -moz-transition: transition duration 0.4s !important;
+  -o-transition: transition duration 0.4s !important;
+}
 @media only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-width: 1824px) {
   p {
     font-size: 16px!important;
