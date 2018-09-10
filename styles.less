@@ -1,16 +1,18 @@
+html::-webkit-scrollbar {
+    display: none;
+}
 html {
     body {
         padding-top: 54px;
         width: 100%;
     }
+
     width: 100%!important;
 }
 p, h1, h2, h3, h4 {
     cursor: default!important;
 }
-p {
-    font-size: 15px!important;
-}
+
 
 .pointer {
     cursor: pointer!important;
@@ -48,8 +50,27 @@ p {
 @laptop-retina: ~"only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)";
 @desktop-xl: ~"only screen and (min-width: 1824px)";
 
+@media @laptop-desktop, @laptop-retina, @iPad, @iPadPro, @desktop-xl {
+    p {
+        font-size: 16px!important;
+    }
+    h1 {
+        font-size: 50px!important;
+    }
+    h2 {
+        font-size: 42px!important;
+    }
+    h3 {
+        font-size: 32px!important;
+    }
+    h4 {
+        font-size: 22px!important;
+    }
+}
+
 .navbar {
     position: fixed!important;
+    background-color: rgb(228,233,239)!important;
     /* Make it stick/fixed */
     top: 0!important;
     /* Stay on top */
@@ -59,7 +80,11 @@ p {
 .navbar > div > ul {
     margin-top:9px!important;
     li.hover-both > a.nav-link:hover {
-        color: red!important;
+        color: rgb(44, 255, 72)!important;
+    }
+    li.nav-item > a.nav-link:hover {
+        color: rgb(44, 171, 255); 
+        text-shadow: 1px 1px rgba(0, 0, 0, 1)!important;
     }
 }
 
@@ -122,13 +147,13 @@ header {
         }
         @media @iPad, @iPadPro, @laptop-desktop, @laptop-retina {
             width: 450px!important;
+            margin-top: 10px!important;
         }
         @media @desktop-xl {
             width: 515px!important;
         }
         background-color: @off-white!important;
         border-radius: 15px!important;
-        margin-top: 20px!important;
         margin-left: auto!important;
         margin-right: auto!important;
 
@@ -191,12 +216,12 @@ header {
     }
 }
 
-section {
+section#intro {
     @media @iPad, @iPadPro, @laptop-desktop, @laptop-retina {
-        height: 1600px!important;
+        height: 1575px!important;
     }
     @media @desktop-xl {
-        height: 2000px!important;
+        height: auto!important;
     }
     margin-top: -25px!important;
     div {
@@ -206,7 +231,6 @@ section {
         div {
             float: unset!important;
             text-align: left!important;
-            margin-bottom: 60px!important;
         }
     }
     div.parallax-window-body-fjord {
@@ -214,14 +238,16 @@ section {
         max-width: auto!important;
 
         /* Set a specific height */
-        height: 220px!important;
+        height: 275px!important;
         margin-top: 2px!important;
     }
     div.container {
         width: 100%!important;
         margin-top: 35px!important;
+        @media @laptop-desktop, @laptop-retina {
+            height: auto!important;
+        }
         div {
-            margin-top: 18px!important;
             h2 {
                 background-color: white;
                 color: black;
@@ -236,11 +262,11 @@ section {
                 padding: 25px 35px!important;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
                 max-height: 500px!important;
-
             }
 
             div.container {
-                margin-top: 35px!important;
+                // DO NOT CHANGE HEIGHT B/C SCROLL INSIDE BLUE
+                height: 400px!important;
                 .parallax-simple {
                     background-image: url("./pics/simple-blue.jpg");
                     position: relative!important;
@@ -253,11 +279,13 @@ section {
                 .horizontal-scroll-wrapper {
                     position: relative!important;
                     display: flex!important;
+                    margin-top: 35px!important;
                     // CHANGE TO COLUMN FOR SMART PHONES
                     @media @desktop-xl, @laptop-desktop, @laptop-retina {
                         width: 1105px!important;
                         flex-flow: row nowrap!important;
                         overflow-x: scroll!important;
+                        overscroll-behavior: none!important; 
                         overflow-y: hidden!important;
                         height: 500px!important;
                     }
@@ -291,8 +319,8 @@ section {
                 } 
                 div#container-front, div#container-back {
                     @experience-card: 400px;
+                    @h4-title: (@experience-card/6);
                     width:  300px!important;
-                    height: @experience-card!important;
                     margin: -1px 0px 0px 0px!important;
                     background-color: rgb(255, 255, 255)!important;
                     border-radius: 6px!important;
@@ -302,15 +330,19 @@ section {
                     -moz-transition: 0.15s ease-in-out!important;
                     -o-transition: 0.15s ease-in-out!important;
                     h4 {
+                        position: relative;
                         cursor: pointer!important;
-                        margin-top: -47px!important;
+                        top: 10%!important;
                         color: rgba(56, 56, 56, 0.95)!important;
                         text-align: center!important;
                         font-weight: 500!important;
                         text-shadow: 1.2px 1.2px rgba(137, 178, 211, 0.418)!important;
                     }
-                    .fix-image {
-                        margin-top:50px!important;
+                    .fix-image-small {
+                        margin-top:70px!important;
+                    }
+                    .fix-image-big {
+                        margin-top: 11px!important;
                     }
                     .fix-title-1 {
                         margin-top: 10px!important;
@@ -349,14 +381,14 @@ section {
                     &::-webkit-scrollbar{
                         display: none;
                     }
-                }       
+                }   
             }
         }
     }
 }
 
 div.parallax-window-footer {
-
+    height: 300px!important;
     div {
         width: 500px!important;
         h2 {
@@ -507,3 +539,57 @@ img.icons {
     max-width: 20px!important;
     height: auto!important;
 }
+
+.left {
+    display: block!important;
+    position: relative!important;
+    width: 10px;
+    height: 10px;
+    border: 27px solid #333;
+    border-radius: 50%;
+    margin-left: -1.8em;
+    margin-top: 12em;
+  }
+  
+  .left:after {
+    content: '';
+    display: inline-block;
+    margin-top: -1.2em!important;
+    margin-left: -.55em;
+    width: 1.75em;
+    height: 1.75em;
+    border-top: 0.5em solid white;
+    border-right: 0.5em solid white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .right {
+    display: unset!important;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border: 27px solid #333;
+    border-radius: 50%;
+    margin-right: -1.8em;
+    margin-top: 12em;
+  }
+  
+  .right:after {
+    content: '';
+    display: inline-block;
+    margin-top: 1.05em;
+    margin-left: -0.6em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.5em solid #333;
+    border-right: 0.5em solid #333;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

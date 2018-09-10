@@ -1,3 +1,6 @@
+html::-webkit-scrollbar {
+  display: none;
+}
 html {
   width: 100%!important;
 }
@@ -11,9 +14,6 @@ h2,
 h3,
 h4 {
   cursor: default!important;
-}
-p {
-  font-size: 15px!important;
 }
 .pointer {
   cursor: pointer!important;
@@ -29,8 +29,26 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-width: 1824px) {
+  p {
+    font-size: 16px!important;
+  }
+  h1 {
+    font-size: 50px!important;
+  }
+  h2 {
+    font-size: 42px!important;
+  }
+  h3 {
+    font-size: 32px!important;
+  }
+  h4 {
+    font-size: 22px!important;
+  }
+}
 .navbar {
   position: fixed!important;
+  background-color: #e4e9ef !important;
   /* Make it stick/fixed */
   top: 0!important;
   /* Stay on top */
@@ -41,7 +59,11 @@ p {
   margin-top: 9px!important;
 }
 .navbar > div > ul li.hover-both > a.nav-link:hover {
-  color: red!important;
+  color: #2cff48 !important;
+}
+.navbar > div > ul li.nav-item > a.nav-link:hover {
+  color: #2cabff;
+  text-shadow: 1px 1px #000000 !important;
 }
 div.circle > a > .my-picture {
   border-radius: 50%!important;
@@ -98,7 +120,6 @@ header .wrapper-shadow-backgrounds {
 header .card-width {
   background-color: #f8f8f8 !important;
   border-radius: 15px!important;
-  margin-top: 20px!important;
   margin-left: auto!important;
   margin-right: auto!important;
 }
@@ -115,6 +136,7 @@ header .card-width {
 @media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   header .card-width {
     width: 450px!important;
+    margin-top: 10px!important;
   }
 }
 @media only screen and (min-width: 1824px) {
@@ -173,47 +195,48 @@ header .card-width .card-content div.panel-body > div.container-depend .buttons 
   grid-column-gap: 10px!important;
   justify-content: center;
 }
-section {
+section#intro {
   margin-top: -25px !important;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  section {
-    height: 1600px!important;
+  section#intro {
+    height: 1575px!important;
   }
 }
 @media only screen and (min-width: 1824px) {
-  section {
-    height: 2000px!important;
+  section#intro {
+    height: auto!important;
   }
 }
-section div {
+section#intro div {
   display: flex!important;
   flex-flow: row wrap!important;
 }
-section div div {
+section#intro div div {
   float: unset!important;
   text-align: left!important;
-  margin-bottom: 60px!important;
 }
-section div.parallax-window-body-fjord {
+section#intro div.parallax-window-body-fjord {
   position: relative!important;
   max-width: auto!important;
   /* Set a specific height */
-  height: 220px!important;
+  height: 275px!important;
   margin-top: 2px!important;
 }
-section div.container {
+section#intro div.container {
   width: 100%!important;
   margin-top: 35px!important;
 }
-section div.container div {
-  margin-top: 18px!important;
+@media only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  section#intro div.container {
+    height: auto!important;
+  }
 }
-section div.container div h2 {
+section#intro div.container div h2 {
   background-color: white;
   color: black;
 }
-section div.container div div.wrapper-shadow {
+section#intro div.container div div.wrapper-shadow {
   display: inline-block !important;
   max-width: 255px!important;
   background-color: white;
@@ -222,10 +245,10 @@ section div.container div div.wrapper-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   max-height: 500px!important;
 }
-section div.container div div.container {
-  margin-top: 35px!important;
+section#intro div.container div div.container {
+  height: 400px!important;
 }
-section div.container div div.container .parallax-simple {
+section#intro div.container div div.container .parallax-simple {
   background-image: url("./pics/simple-blue.jpg");
   position: relative!important;
   margin-left: -15px !important;
@@ -234,24 +257,26 @@ section div.container div div.container .parallax-simple {
   background-size: cover!important;
   box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.5) !important;
 }
-section div.container div div.container .horizontal-scroll-wrapper {
+section#intro div.container div div.container .horizontal-scroll-wrapper {
   position: relative!important;
   display: flex!important;
+  margin-top: 35px!important;
   max-width: inherit!important;
   padding-left: 45px!important;
   padding-top: 0px!important;
 }
 @media only screen and (min-width: 1824px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  section div.container div div.container .horizontal-scroll-wrapper {
+  section#intro div.container div div.container .horizontal-scroll-wrapper {
     width: 1105px!important;
     flex-flow: row nowrap!important;
     overflow-x: scroll!important;
+    overscroll-behavior: none!important;
     overflow-y: hidden!important;
     height: 500px!important;
   }
 }
 @media only screen and (min-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  section div.container div div.container .horizontal-scroll-wrapper {
+  section#intro div.container div div.container .horizontal-scroll-wrapper {
     width: 367px!important;
     flex-flow: column nowrap!important;
     overflow-x: hidden!important;
@@ -260,13 +285,13 @@ section div.container div div.container .horizontal-scroll-wrapper {
     height: 500px!important;
   }
 }
-section div.container div div.container .horizontal-scroll-wrapper::-webkit-scrollbar {
+section#intro div.container div div.container .horizontal-scroll-wrapper::-webkit-scrollbar {
   display: none;
 }
-section div.container div div.container div.horizontal-scroll-wrapper > div#column-1,
-section div.container div div.container div#column-2,
-section div.container div div.container div#column-3,
-section div.container div div.container div#column-4 {
+section#intro div.container div div.container div.horizontal-scroll-wrapper > div#column-1,
+section#intro div.container div div.container div#column-2,
+section#intro div.container div div.container div#column-3,
+section#intro div.container div div.container div#column-4 {
   display: flex;
   flex-flow: column wrap;
   cursor: pointer!important;
@@ -276,16 +301,15 @@ section div.container div div.container div#column-4 {
   height: 400px!important;
   width: auto!important;
 }
-section div.container div div.container div.horizontal-scroll-wrapper > div#column-1:last-child,
-section div.container div div.container div#column-2:last-child,
-section div.container div div.container div#column-3:last-child,
-section div.container div div.container div#column-4:last-child {
+section#intro div.container div div.container div.horizontal-scroll-wrapper > div#column-1:last-child,
+section#intro div.container div div.container div#column-2:last-child,
+section#intro div.container div div.container div#column-3:last-child,
+section#intro div.container div div.container div#column-4:last-child {
   padding-right: 40px!important;
 }
-section div.container div div.container div#container-front,
-section div.container div div.container div#container-back {
+section#intro div.container div div.container div#container-front,
+section#intro div.container div div.container div#container-back {
   width: 300px!important;
-  height: 400px !important;
   margin: -1px 0px 0px 0px !important;
   background-color: #ffffff !important;
   border-radius: 6px!important;
@@ -295,40 +319,45 @@ section div.container div div.container div#container-back {
   -moz-transition: 0.15s ease-in-out !important;
   -o-transition: 0.15s ease-in-out !important;
 }
-section div.container div div.container div#container-front h4,
-section div.container div div.container div#container-back h4 {
+section#intro div.container div div.container div#container-front h4,
+section#intro div.container div div.container div#container-back h4 {
+  position: relative;
   cursor: pointer!important;
-  margin-top: -47px !important;
+  top: 10%!important;
   color: rgba(56, 56, 56, 0.95) !important;
   text-align: center!important;
   font-weight: 500!important;
   text-shadow: 1.2px 1.2px rgba(137, 178, 211, 0.418) !important;
 }
-section div.container div div.container div#container-front .fix-image,
-section div.container div div.container div#container-back .fix-image {
-  margin-top: 50px!important;
+section#intro div.container div div.container div#container-front .fix-image-small,
+section#intro div.container div div.container div#container-back .fix-image-small {
+  margin-top: 70px!important;
 }
-section div.container div div.container div#container-front .fix-title-1,
-section div.container div div.container div#container-back .fix-title-1 {
+section#intro div.container div div.container div#container-front .fix-image-big,
+section#intro div.container div div.container div#container-back .fix-image-big {
+  margin-top: 11px!important;
+}
+section#intro div.container div div.container div#container-front .fix-title-1,
+section#intro div.container div div.container div#container-back .fix-title-1 {
   margin-top: 10px!important;
 }
-section div.container div div.container div#container-front .fix-title-2,
-section div.container div div.container div#container-back .fix-title-2 {
+section#intro div.container div div.container div#container-front .fix-title-2,
+section#intro div.container div div.container div#container-back .fix-title-2 {
   margin-top: 20px!important;
 }
-section div.container div div.container div#container-front div.description,
-section div.container div div.container div#container-back div.description {
+section#intro div.container div div.container div#container-front div.description,
+section#intro div.container div div.container div#container-back div.description {
   display: flex!important;
   flex-flow: column wrap!important;
 }
-section div.container div div.container div#container-front div > h5,
-section div.container div div.container div#container-back div > h5 {
+section#intro div.container div div.container div#container-front div > h5,
+section#intro div.container div div.container div#container-back div > h5 {
   cursor: pointer!important;
   text-align: center;
   font-size: 17px!important;
 }
-section div.container div div.container div#container-front p,
-section div.container div div.container div#container-back p {
+section#intro div.container div div.container div#container-front p,
+section#intro div.container div div.container div#container-back p {
   display: none;
   text-justify: inter-word;
   text-align: left!important;
@@ -336,21 +365,24 @@ section div.container div div.container div#container-back p {
   color: black;
   padding: 10px 30px 100px 18px!important;
 }
-section div.container div div.container div#container-front div.skill-container:first-child,
-section div.container div div.container div#container-back div.skill-container:first-child {
+section#intro div.container div div.container div#container-front div.skill-container:first-child,
+section#intro div.container div div.container div#container-back div.skill-container:first-child {
   margin-top: 205px!important;
 }
-section div.container div div.container div#container-front div.skill-container:last-child,
-section div.container div div.container div#container-back div.skill-container:last-child {
+section#intro div.container div div.container div#container-front div.skill-container:last-child,
+section#intro div.container div div.container div#container-back div.skill-container:last-child {
   margin-bottom: -20px !important;
 }
-section div.container div div.container div#container-front:hover,
-section div.container div div.container div#container-back {
+section#intro div.container div div.container div#container-front:hover,
+section#intro div.container div div.container div#container-back {
   box-shadow: 12px 20px 40px 0px rgba(0, 0, 0, 0.665) !important;
 }
-section div.container div div.container div#container-front:hover::-webkit-scrollbar,
-section div.container div div.container div#container-back::-webkit-scrollbar {
+section#intro div.container div div.container div#container-front:hover::-webkit-scrollbar,
+section#intro div.container div div.container div#container-back::-webkit-scrollbar {
   display: none;
+}
+div.parallax-window-footer {
+  height: 300px!important;
 }
 div.parallax-window-footer div {
   width: 500px!important;
@@ -498,4 +530,54 @@ img.icons {
   background-attachment: fixed;
   max-width: 20px!important;
   height: auto!important;
+}
+.left {
+  display: block!important;
+  position: relative!important;
+  width: 10px;
+  height: 10px;
+  border: 27px solid #333;
+  border-radius: 50%;
+  margin-left: -1.8em;
+  margin-top: 12em;
+}
+.left:after {
+  content: '';
+  display: inline-block;
+  margin-top: -1.2em !important;
+  margin-left: -0.55em;
+  width: 1.75em;
+  height: 1.75em;
+  border-top: 0.5em solid white;
+  border-right: 0.5em solid white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.right {
+  display: unset!important;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: 27px solid #333;
+  border-radius: 50%;
+  margin-right: -1.8em;
+  margin-top: 12em;
+}
+.right:after {
+  content: '';
+  display: inline-block;
+  margin-top: 1.05em;
+  margin-left: -0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
