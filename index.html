@@ -59,7 +59,6 @@
         <script src="./parallax.js-1.5.0/parallax.js"></script>
         <script src="./jquery/jquery.flip.js"></script>
         <script src='./js/drag-on.js'></script>
-
     </head>
 
     <body data-spy="scroll" data-target="#navbar-example2" id="top">
@@ -76,34 +75,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#hobbies">@hobbies</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item hover-both">
                         <a
-                            class="nav-link dropdown-toggle"
-                            data-toggle="dropdown"
-                            href="#"
-                            role="button"
-                            aria-haspopup="true"
-                            aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#one">one</a>
-                            <a class="dropdown-item" href="#two">two</a>
-                            <div role="separator" class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#three">three</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a
-                            class="nav-link hover-both"
+                            class="nav-link"
                             data-toggle="tooltip"
                             title="Download Résume"
                             href="./Mitchell_Resume.pdf"
                             target="_blank">Résume
                         </a>
                     </li>
-                    <li class="nav-item" style="margin:-3px 0 0 -30px!important" >
-                        <a href="./Mitchell_Resume.pdf" target="_blank" id="icon"><i class="material-icons nav-link" style="cursor:pointer!important; margin-bottom:10px!important;">
-                            vertical_align_bottom
-                        </i></a>
+                    <li class="nav-item" id="icon" style="margin:-3px 0 0 -30px!important">
+                        <a class="nav-link" href="./Mitchell_Resume.pdf" target="_blank"></a>
                     </li>
                 </ul>
             </div>
@@ -113,18 +95,20 @@
     <header
         class="py-5 parallax-window-header"
         data-parallax="scroll"
-        data-image-src="./pics/tempIMG1.jpg">
+        data-image-src="./pics/8k-4.jpg">
         <div class="py-5 card-width wrapper-shadow-backgrounds" align="center">
             <div class="card-content">
                 <div class="panel-body">
                     <div class="circle">
-                        <a id="face" href="#personal-note"><img class="my-picture" src="./pics/mrlayton.jpg">
+                        <a id="face" href="#intro"><img class="my-picture" src="./pics/mrlayton.jpg">
                         </a>
                     </div>
                     <br/>
                     <br/>
                     <div class="transitions">
-                        <h2 class="lead text-center font-weight-normal text-dark">Hi, I'm Mitchell Layton!</h2>
+                        <h3
+                            class="lead text-center font-weight-normal text-dark"
+                            style="font-size: 28px!important;">Hi, I'm Mitchell Layton!</h3>
                         <hr/>
                         <div class="degree">
                             <a
@@ -137,7 +121,7 @@
                         <p class="lead font-weight-light text-center">University of California, Davis</p>
                         <br/>
                     </div>
-                    <div class="container container-depend">
+                    <div class="container-depend">
                         <div class="buttons">
                             <div>
                                 <a
@@ -168,59 +152,82 @@
     <section id="intro" class="py-5 mx-auto">
         <div class="container">
             <div>
-                <h1 class="border-bottom border-secondary">A Breif Introduction</h1>
+                <h2 class="border-bottom border-secondary">Introduction</h2>
                 <p>
                     <hr/>
                     <br/>
                     "To achieve great things, two things are needed; a plan, and not quite enough
                     time." -Leonard Bernstein
-                </p>
-                <p>
-                    <br/>
-                    <br/>
                     <br/>
                 </p>
                 <p>
-                    Activities with challenging and intricate characteristics are something that
-                    give me continuous joy—whether it be my developing my musical craft or learning
-                    new software technologies—applying myself into such interests furthers my
-                    confidence in being able to grow and succeed in any future task I pursue. While
-                    I may not have all of the answers or current abilities to perform a particular
-                    task, I know that I am very adaptable; learning things on the fly and applying
-                    myself are key values that I have predicated my experiences on.
-                    <br><br>
-                    Pursuing a B.S. in Statistical Data Science within the Statistics department at
-                    UC Davis has been a humbling and rewarding experience; learning challenging
-                    concepts and the rigorous theory of statistics, mathematics, and computer
-                    science while balancing my time with NCAA Division I -AA Football has developed
-                    my tenacity and perseverance. The most valuable skills I’ve learned along my
-                    journey is time management, meeting tight deadlines, and having a consistent
-                    work ethic. Some important lessons I've learned from my collegiate journey are
-                    building lasting relationships, believing in my own capabilities, and realizing
-                    my potential for growth. Thanks for taking a minute to read my bio! Feel free to
-                    contact me regarding any questions you may have.
+                    <br/>
+                    <br/>
+                    <br/>
                 </p>
+                <article style="padding-bottom:75px!important;">
+                    <p>
+                        As I've progressed throughout my education and early career development, I have
+                        always believed that I should pursue ideas or interests that would lead to a
+                        fulfilling career. Initially, I based my decisions on the principle that putting
+                        in hard work will bring me closer to reaching that sense of fulfillment—but what
+                        I have realized is that this journey can be unpredictable, malleable, and
+                        humbling. Despite any short term goals or career planning I may have, life
+                        brings upon us an ever changing landscape and the lessons that I’ve learn from
+                        such a journey has taught me a few things: humility, curiosity, and empathy.
+                        <br><br>
+                    </p>
+                    <a href="#collapse" id="link" class="nav-toggle" onclick="revealText()">Read More...</a>
+                    <div id="collapse" style="display:none!important;">
+                        <p>
+                            College was, and still is, an enlightening experience that has given me
+                            perspective and guidance. Later in my time at Davis, I realized that my
+                            education and degree does not define who I am; I may choose to pursue any
+                            interests that I may come across whether or not it had fit my previous
+                            interpretation of success. For example, I believed that all of my time should be
+                            spent on learning statistical methodologies, coding, and improving my knowledge
+                            of machine learning concepts in order to one day become a data scientist. While
+                            it seems like a good plan, and may still be—my curiosity and search for
+                            intellectually stimulating things is high which consequently leads to other
+                            developments of skills that I end up pursuing. For example, after seeking
+                            employment for summer internships, I had realized that many hiring or staffing
+                            companies provide an opportunity plug in personal website link. While it isn’t a
+                            necessary item, this had sparked my interest and I soon began constructing this
+                            here personal website from scratch—which started by learning the basics of HTML,
+                            CSS, and Javascript.
+                            <br><br>
+                            Self development and a constant fix for intellectually stimulating things have
+                            guided me along a path of knowledge and has given me an appreciation for
+                            redefining who I am. From learning classical piano to developing a personal
+                            website, my outlook in life is to embark on a developmental journey; I am not
+                            restricted by my degree or limited by my successes or failures. Thanks for
+                            taking the time to visit my website and I hope you enjoy to get to know a little
+                            more about myself.
+                        </p>
+                    </div>
+                </article>
             </div>
         </div>
 
         <div
-            id="experience"
             class="py-5 parallax-window-body-fjord"
             data-parallax="scroll"
-            data-image-src="./pics/geiranger-fjord.jpg"></div>
+            data-image-src="./pics/8k-1.jpg"></div>
 
-        <div class="container">
+        <div id="experience" class="container">
             <div>
                 <h2 class="border-bottom border-secondary">Experience</h2>
                 <p>
                     <br>
-                    As a student-athlete, I’ve been proactive at finding experience to bolster my
-                    resume by continuously applying to a variety of positions posted on job boards
-                    and company's career sections. Both of my previous positions held during the
-                    summers of 2017 and 2018 were congruent with certain skills required from
-                    university—except that these positions prepared me towards a more business and
-                    customer approache to project development and problem solving.
+                    As a student-athlete, I’ve made it a high priority in being proactive by appling
+                    for relevant internships in hopes that it will give me credible experience. In
+                    both of my previous positions that were held during the summers of 2017 and
+                    2018, I had learned new technologies and obtained working knowledge in both a
+                    corporate and government sector. Both positions taught me how to approach
+                    problem solving and project development with a more business and customer
+                    approach.
                 </p>
+
                 <div class="container">
                     <div
                         class="parallax-simple"
@@ -231,22 +238,22 @@
                         <div class="horizontal-scroll-wrapper dragon">
                             <div id="column-1" class="card-column" onclick="loadSan()">
                                 <div id="container-front" class="front">
-                                    <div class="mx-auto fix-image">
+                                    <div class="mx-auto fix-image-small">
                                         <img src="./pics/PGE.jpg" class="pge">
                                     </div>
-                                    <h4 class="mx-auto fix-title-2">Data Analyst Intern</h4>
+                                    <h4 class="mx-auto">Data Analyst Intern</h4>
                                     <div class="description mx-auto" style="margin-top:45px!important">
                                         <h5 class="mx-auto">San Francisco, CA</h5>
-                                        <h5 class="mx-auto">June - August 2018</h5>
+                                        <h5 class="mx-auto" style="margin-top:8px!important;">Jun 2018 - Aug 2018</h5>
                                     </div>
                                 </div>
                                 <div
                                     id="container-back"
                                     class="back"
-                                    style="overflow-y:scroll; overflow-x: hidden;">
+                                    style="overflow-y: scroll!important; overflow-x: hidden!important; overscroll-behavior: none!important;">
                                     <h2
                                         class="border-bottom mx-auto"
-                                        style="padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Growth</h2>
+                                        style="border-width: 2px!important; padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Growth</h2>
                                     <p id="San" style="margin-bottom:-70px!important;">
                                         My most recent experience was at PG&E in San Francisco—working among a team that
                                         was responsible for the collection and reporting of crucial company metrics.
@@ -263,7 +270,7 @@
                                     </p>
                                     <h2
                                         class="border-bottom mx-auto"
-                                        style="padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Skills</h2>
+                                        style="border-width: 2px!important; padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Skills</h2>
 
                                     <div class="skill-container" style="display:flex; flex-flow:column;">
                                         <div class="mx-auto">
@@ -291,21 +298,21 @@
                             <div id="column-2" class="card-column" onclick="loadWeb()">
                                 <div id="container-front" class="front">
                                     <div class="mx-auto ">
-                                        <img src="./pics/WebDesign.jpg" class="web">
+                                        <img src="./pics/WebDesign.jpg" class="web fix-image-big">
                                     </div>
                                     <h4 class="mx-auto">Personal Website Development</h4>
                                     <div class="description mx-auto">
-                                        <h5>Danville & Davis, CA</h5>
-                                        <h5>August - September 2018</h5>
+                                        <h5 class="mx-auto">Danville & Davis, CA</h5>
+                                        <h5 class="mx-auto" style="margin-top:8px!important;">Aug 2018 - Sep 2018</h5>
                                     </div>
                                 </div>
                                 <div
                                     id="container-back"
                                     class="back"
-                                    style="overflow-y:scroll; overflow-x: hidden;">
+                                    style="overflow-y: scroll!important; overflow-x: hidden!important; overscroll-behavior: none!important;">
                                     <h2
                                         class="border-bottom mx-auto"
-                                        style="padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Motivation</h2>
+                                        style="border-width: 2px!important; padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Motivation</h2>
                                     <p id="Web" class="mx-auto" style="margin-bottom:-70px!important;">
                                         As someone who loves learning new things, I thought it would prove useful and
                                         exciting to develop my own personal website. The thought process was that not
@@ -322,7 +329,7 @@
                                     </p>
                                     <h2
                                         class="border-bottom mx-auto"
-                                        style="padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Skills</h2>
+                                        style="border-width: 2px!important; padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Skills</h2>
                                     <div
                                         class="skill-container"
                                         style="display:flex; flex-flow:column; margin-top: 100px!important;">
@@ -352,21 +359,21 @@
                             <div id="column-3" class="card-column" onclick="loadDav()">
                                 <div id="container-front" class="front">
                                     <div class="mx-auto ">
-                                        <img src="./pics/Mitch_Monata_Game.jpg" class="mitchell">
+                                        <img src="./pics/Mitch_Monata_Game.jpg" class="mitchell fix-image-big">
                                     </div>
                                     <h4 class="mx-auto">Student-Athlete: NCAA Division I-AA Football</h4>
                                     <div class="description mx-auto">
                                         <h5 class="mx-auto">Davis, CA</h5>
-                                        <h5 class="mx-auto">January 2015 - December 2018</h5>
+                                        <h5 class="mx-auto" style="margin-top:8px!important;">Jan 2015 - Dec 2018</h5>
                                     </div>
                                 </div>
                                 <div
                                     id="container-back"
                                     class="back"
-                                    style="overflow-y:scroll; overflow-x: hidden;">
+                                    style="overflow-y: scroll!important; overflow-x: hidden!important; overscroll-behavior: none!important;">
                                     <h2
                                         class="border-bottom mx-auto"
-                                        style="padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Balance</h2>
+                                        style="border-width: 2px!important; padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Balance</h2>
                                     <p id="Dav">
                                         I am currently a football player for UC Davis under the NCAA Divison I-AA, where
                                         we play under the FCS. As a part of the team, we are responsible for 30+ hours a
@@ -397,19 +404,20 @@
                                     <div class="mx-auto fix-image">
                                         <img src="./pics/sac_transparent.jpg" class="sacramento">
                                     </div>
-                                    <h4 class="mx-auto fix-title-1">SQL Developer & Database Analyst Intern</h4>
+                                    <h4 class="mx-auto fix-title-1" style="margin-top:-2px!important;">SQL Developer &</h4>
+                                    <h4 class="mx-auto fix-title-1" style="margin-top:-4px!important;">Database Analyst Intern</h4>
                                     <div class="description mx-auto" style="margin-top:20px!important;">
                                         <h5 class="mx-auto">Sacramento, CA</h5>
-                                        <h5 class="mx-auto">June - August 2017</h5>
+                                        <h5 class="mx-auto" style="margin-top:8px!important;">Jun 2017 - Aug 2017</h5>
                                     </div>
                                 </div>
                                 <div
                                     id="container-back"
                                     class="back"
-                                    style="overflow-y:scroll; overflow-x: hidden;">
+                                    style="overflow-y: scroll!important; overflow-x: hidden!important; overscroll-behavior: none!important;">
                                     <h2
                                         class="border-bottom mx-auto"
-                                        style="padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Catalyst</h2>
+                                        style="border-width: 2px!important; padding:11px 0 0 10px!important; width: 100%!important; cursor: pointer!important;">Catalyst</h2>
                                     <p id="Sac">
                                         As my first programming job experience, I learned to develope complex SQL
                                         queries and procedures to fulfill business requirements; it was the first
@@ -427,7 +435,7 @@
                                     </p>
                                     <h2
                                         class="border-bottom mx-auto"
-                                        style="margin-top:-60px!important; padding: 0px 0 0 10px!important; width: 100%!important;">Skills</h2>
+                                        style="border-width: 2px!important; margin-top:-60px!important; padding: 0px 0 0 10px!important; width: 100%!important;">Skills</h2>
                                     <div
                                         class="skill-container"
                                         style="display:flex; flex-flow:column; justify-content: center; align-content: center;">
@@ -449,11 +457,13 @@
 
     <div
         id="hobbies"
-        class="py-5 parallax parallax-window-footer"
+        class="py-5 parallax-window-footer"
         data-parallax="scroll"
-        data-image-src="./pics/piano2.jpg"></div>
+        data-image-src="./pics/8k-5.jpg"></div>
     <!-- <div class="container mx-auto">
-        <h2 class="border-bottom border-secondary" style="margin-top: 30px!important;">Hobbies</h2>
+        <h2
+            class="border-bottom border-secondary"
+            style="margin-top: 30px!important; width: 15.5%!important;">Hobbies</h2>
         <p>
             <br>
             Outside of university and collegiate athletics, I have a set of interests that
@@ -573,5 +583,18 @@
         $('[data-toggle="tooltip"]').tooltip();
     });
     $('body').scrollspy({target: '.navbar'})
+
+    function revealText() {
+        //removes the link
+        document
+            .getElementById('link')
+            .parentElement
+            .removeChild('link');
+        //shows the #more
+        document
+            .getElementById('collapse')
+            .style
+            .display = "block!important";
+    }
 </script>
 </html>
