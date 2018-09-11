@@ -11,8 +11,10 @@
         <meta name="author" content="MitchellRLayton">
         <title>Mitchell Layton</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
         <!-- Bootstrap core CSS -->
         <link href="./css/bootstrap.min.css" rel="stylesheet">
 
@@ -107,42 +109,40 @@
                     <br/>
                     <div class="transitions">
                         <h3
-                            class="lead text-center font-weight-normal text-dark"
-                            style="font-size: 28px!important;">Hi, I'm Mitchell Layton!</h3>
-                        <hr/>
-                        <div class="degree">
+                            class="lead text-center font-weight-normal text-dark border-bottom border-secondary pb-1">Hi, I'm Mitchell Layton!</h3>
+                        <div class="degree pt-3">
                             <a
                                 href="https://www.stat.ucdavis.edu/undergrad/major/statistical-data-science.html"
                                 target="_blank"
                                 class="statistical">
-                                <p>B.S. in Statistical Data Science</p>
+                                <h5>B.S. in Statistical Data Science</h5>
                             </a><br/>
                         </div>
-                        <p class="lead font-weight-light text-center">University of California, Davis</p>
+                        <h6
+                            class="lead font-weight-light text-center mt-3 text-primary"
+                            style="opacity:.8!important;">University of California, Davis</h6>
                         <br/>
                     </div>
-                    <div class="container-depend">
-                        <div class="buttons">
-                            <div>
-                                <a
-                                    class="btn btn-outline-secondary btn-md btnStyle"
-                                    href="https://www.linkedin.com/in/mitchell-layton-77438a88/"
-                                    target="_blank"
-                                    role="button">Linkedin</a>
-                            </div>
-                            <div>
-                                <a
-                                    class="btn btn-outline-secondary btn-md btnStyle"
-                                    href="./ContactForm/index.html"
-                                    role="button">Contact</a>
-                            </div>
-                            <div>
-                                <a
-                                    class="btn btn-outline-secondary btn-md btnStyle"
-                                    href="https://github.com/MitchellRLayton"
-                                    target="_blank"
-                                    role="button">GitHub</a>
-                            </div>
+                    <div class="buttons">
+                        <div>
+                            <a
+                                class="btn btn-outline-secondary btn-md btnStyle"
+                                href="https://www.linkedin.com/in/mitchell-layton-77438a88/"
+                                target="_blank"
+                                role="button">Linkedin</a>
+                        </div>
+                        <div class="button-child">
+                            <a
+                                class="btn btn-outline-secondary btn-md btnStyle"
+                                href="./ContactForm/index.html"
+                                role="button">Contact</a>
+                        </div>
+                        <div class="button-child">
+                            <a
+                                class="btn btn-outline-secondary btn-md btnStyle"
+                                href="https://github.com/MitchellRLayton"
+                                target="_blank"
+                                role="button">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -153,20 +153,13 @@
         <div class="container">
             <div>
                 <h2 class="border-bottom border-secondary">Introduction</h2>
-                <p>
-                    <hr/>
-                    <br/>
+                <h6 class="mt-4">
                     "To achieve great things, two things are needed; a plan, and not quite enough
                     time." -Leonard Bernstein
-                    <br/>
-                </p>
-                <p>
-                    <br/>
-                    <br/>
-                    <br/>
-                </p>
-                <article style="padding-bottom:75px!important;">
-                    <p>
+                </h6>
+
+                <article class="mt-3" style="padding-bottom:75px!important;">
+                    <div>
                         As I've progressed throughout my education and early career development, I have
                         always believed that I should pursue ideas or interests that would lead to a
                         fulfilling career. Initially, I based my decisions on the principle that putting
@@ -175,35 +168,31 @@
                         humbling. Despite any short term goals or career planning I may have, life
                         brings upon us an ever changing landscape and the lessons that I’ve learn from
                         such a journey has taught me a few things: humility, curiosity, and empathy.
-                        <br><br>
-                    </p>
-                    <a href="#collapse" id="link" class="nav-toggle" onclick="revealText()">Read More...</a>
-                    <div id="collapse" style="display:none!important;">
-                        <p>
-                            College was, and still is, an enlightening experience that has given me
-                            perspective and guidance. Later in my time at Davis, I realized that my
-                            education and degree does not define who I am; I may choose to pursue any
-                            interests that I may come across whether or not it had fit my previous
-                            interpretation of success. For example, I believed that all of my time should be
-                            spent on learning statistical methodologies, coding, and improving my knowledge
-                            of machine learning concepts in order to one day become a data scientist. While
-                            it seems like a good plan, and may still be—my curiosity and search for
-                            intellectually stimulating things is high which consequently leads to other
-                            developments of skills that I end up pursuing. For example, after seeking
-                            employment for summer internships, I had realized that many hiring or staffing
-                            companies provide an opportunity plug in personal website link. While it isn’t a
-                            necessary item, this had sparked my interest and I soon began constructing this
-                            here personal website from scratch—which started by learning the basics of HTML,
-                            CSS, and Javascript.
-                            <br><br>
-                            Self development and a constant fix for intellectually stimulating things have
-                            guided me along a path of knowledge and has given me an appreciation for
-                            redefining who I am. From learning classical piano to developing a personal
-                            website, my outlook in life is to embark on a developmental journey; I am not
-                            restricted by my degree or limited by my successes or failures. Thanks for
-                            taking the time to visit my website and I hope you enjoy to get to know a little
-                            more about myself.
-                        </p>
+                    </div>
+                    <div class="mt-3" id="showMoreLess" onclick="showText()">
+                        College was, and still is, an enlightening experience that has given me
+                        perspective and guidance. Later in my time at Davis, I realized that my
+                        education and degree does not define who I am; I may choose to pursue any
+                        interests that I may come across whether or not it had fit my previous
+                        interpretation of success. For example, I believed that all of my time should be
+                        spent on learning statistical methodologies, coding, and improving my knowledge
+                        of machine learning concepts in order to one day become a data scientist. While
+                        it seems like a good plan, and may still be—my curiosity and search for
+                        intellectually stimulating things is high which consequently leads to other
+                        developments of skills that I end up pursuing. For example, after seeking
+                        employment for summer internships, I had realized that many hiring or staffing
+                        companies provide an opportunity plug in personal website link. While it isn’t a
+                        necessary item, this had sparked my interest and I soon began constructing this
+                        here personal website from scratch—which started by learning the basics of HTML,
+                        CSS, and Javascript.
+                        <hr/>
+                        Self development and a constant fix for intellectually stimulating things have
+                        guided me along a path of knowledge and has given me an appreciation for
+                        redefining who I am. From learning classical piano to developing a personal
+                        website, my outlook in life is to embark on a developmental journey; I am not
+                        restricted by my degree or limited by my successes or failures. Thanks for
+                        taking the time to visit my website and I hope you enjoy to get to know a little
+                        more about myself.
                     </div>
                 </article>
             </div>
@@ -584,17 +573,28 @@
     });
     $('body').scrollspy({target: '.navbar'})
 
-    function revealText() {
-        //removes the link
-        document
-            .getElementById('link')
-            .parentElement
-            .removeChild('link');
-        //shows the #more
-        document
-            .getElementById('collapse')
-            .style
-            .display = "block!important";
+    var status = "less";
+
+    function toggleText() {
+        var text = "Here is some text that I want added to the HTML file";
+
+        if (status == "less") {
+            document
+                .getElementById("textArea")
+                .innerHTML = text;
+            document
+                .getElementById("toggleButton")
+                .innerText = "See Less";
+            status = "more";
+        } else if (status == "more") {
+            document
+                .getElementById("textArea")
+                .innerHTML = "";
+            document
+                .getElementById("toggleButton")
+                .innerText = "See More";
+            status = "less"
+        }
     }
 </script>
 </html>

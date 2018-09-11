@@ -86,7 +86,13 @@ a.btnStyle:hover {
         font-size: 32px!important;
     }
     h4 {
-        font-size: 22px!important;
+        font-size: 28px!important;
+    }
+    h5 {
+        font-size: 24px!important;
+    }
+    h6 {
+        font-size: 21px!important;
     }
 }
 
@@ -199,7 +205,7 @@ header {
                     content: ""!important;
                     display: inline-flex;
                     position: relative!important;
-                    width: 87%!important;
+                    width: 100%!important;
                     height: 28px!important;
                     bottom: 0!important;
                     left: 0!important;
@@ -223,16 +229,15 @@ header {
                 color: rgba(83, 135, 231, .8)!important;
                 cursor: text!important;
             }
-            div.panel-body > div.container-depend {
-                .buttons {
-                    width: auto;
-                    display: grid;
-                    grid-template-columns: repeat(3, 97px)!important;
-                    grid-row-gap: 0px!important;
-                    grid-column-gap: 10px!important;
-                    justify-content: center;
-                  }
-
+            div.panel-body > div.buttons {
+                position: relative!important;
+                display: flex!important;
+                flex-flow: row nowrap!important;
+                width: 100%!important;
+                justify-content: center!important;
+                .button-child {
+                    padding-left: 20px!important;
+                }
             }
         }
     }
@@ -240,10 +245,13 @@ header {
 
 section#intro {
     @media @iPad, @iPadPro, @laptop-desktop, @laptop-retina {
-        height: 1575px!important;
+        height: auto!important;
     }
     @media @desktop-xl {
         height: auto!important;
+    }
+    div#showMoreLess {
+        display: none!important;
     }
     margin-top: -25px!important;
     div {
@@ -253,6 +261,9 @@ section#intro {
         div {
             float: unset!important;
             text-align: left!important;
+        }
+        #text {
+            display: none!important;
         }
     }
     div.parallax-window-body-fjord {
@@ -274,7 +285,6 @@ section#intro {
                 background-color: white;
                 color: black;
             }
-
 
             div.wrapper-shadow {
                 display: inline-block!important;

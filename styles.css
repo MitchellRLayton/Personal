@@ -65,7 +65,13 @@ a.btnStyle:hover {
     font-size: 32px!important;
   }
   h4 {
-    font-size: 22px!important;
+    font-size: 28px!important;
+  }
+  h5 {
+    font-size: 24px!important;
+  }
+  h6 {
+    font-size: 21px!important;
   }
 }
 .navbar {
@@ -188,7 +194,7 @@ header .card-width .card-content div.panel-body > div.transitions > div.degree a
   content: "" !important;
   display: inline-flex;
   position: relative!important;
-  width: 87%!important;
+  width: 100%!important;
   height: 28px!important;
   bottom: 0!important;
   left: 0!important;
@@ -209,26 +215,31 @@ header .card-width .card-content div.panel-body > div.transitions > p.lead {
   color: rgba(83, 135, 231, 0.8) !important;
   cursor: text!important;
 }
-header .card-width .card-content div.panel-body > div.container-depend .buttons {
-  width: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 97px) !important;
-  grid-row-gap: 0px!important;
-  grid-column-gap: 10px!important;
-  justify-content: center;
+header .card-width .card-content div.panel-body > div.buttons {
+  position: relative!important;
+  display: flex!important;
+  flex-flow: row nowrap!important;
+  width: 100%!important;
+  justify-content: center!important;
+}
+header .card-width .card-content div.panel-body > div.buttons .button-child {
+  padding-left: 20px!important;
 }
 section#intro {
   margin-top: -25px !important;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   section#intro {
-    height: 1575px!important;
+    height: auto!important;
   }
 }
 @media only screen and (min-width: 1824px) {
   section#intro {
     height: auto!important;
   }
+}
+section#intro div#showMoreLess {
+  display: none!important;
 }
 section#intro div {
   display: flex!important;
@@ -237,6 +248,9 @@ section#intro div {
 section#intro div div {
   float: unset!important;
   text-align: left!important;
+}
+section#intro div #text {
+  display: none!important;
 }
 section#intro div.parallax-window-body-fjord {
   position: relative!important;
