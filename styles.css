@@ -51,7 +51,7 @@ a.btnStyle:hover {
   -moz-transition: transition duration 0.4s !important;
   -o-transition: transition duration 0.4s !important;
 }
-@media only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-width: 1824px) {
+@media only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-width: 1800px) {
   p {
     font-size: 16px!important;
   }
@@ -110,7 +110,7 @@ div.circle > a > .my-picture {
     height: 300px!important;
   }
 }
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-width: 1800px) {
   div.circle > a > .my-picture {
     width: 350px!important;
     height: 350px!important;
@@ -167,7 +167,7 @@ header .card-width {
     margin-top: 10px!important;
   }
 }
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-width: 1800px) {
   header .card-width {
     width: 515px!important;
   }
@@ -194,7 +194,6 @@ header .card-width .card-content div.panel-body > div.transitions > div.degree a
   content: "" !important;
   display: inline-flex;
   position: relative!important;
-  width: 100%!important;
   height: 28px!important;
   bottom: 0!important;
   left: 0!important;
@@ -203,6 +202,16 @@ header .card-width .card-content div.panel-body > div.transitions > div.degree a
   border-radius: 5px!important;
   transform: scaleX(0) !important;
   transition: 0.25s linear !important;
+}
+@media only screen and (min-device-width: 1224px) {
+  header .card-width .card-content div.panel-body > div.transitions > div.degree a.statistical:before {
+    width: 90%!important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  header .card-width .card-content div.panel-body > div.transitions > div.degree a.statistical:before {
+    width: 90%!important;
+  }
 }
 header .card-width .card-content div.panel-body > div.transitions > div.degree a.statistical:focus:before,
 header .card-width .card-content div.panel-body > div.transitions > div.degree a.statistical:hover:before {
@@ -224,22 +233,6 @@ header .card-width .card-content div.panel-body > div.buttons {
 }
 header .card-width .card-content div.panel-body > div.buttons .button-child {
   padding-left: 20px!important;
-}
-section#intro {
-  margin-top: -25px !important;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1024px) and (max-width: 1366px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  section#intro {
-    height: auto!important;
-  }
-}
-@media only screen and (min-width: 1824px) {
-  section#intro {
-    height: auto!important;
-  }
-}
-section#intro div#showMoreLess {
-  display: none!important;
 }
 section#intro div {
   display: flex!important;
@@ -301,7 +294,7 @@ section#intro div.container div div.container .horizontal-scroll-wrapper {
   padding-left: 45px!important;
   padding-top: 0px!important;
 }
-@media only screen and (min-width: 1824px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media only screen and (min-width: 1800px), only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   section#intro div.container div div.container .horizontal-scroll-wrapper {
     width: 1105px!important;
     flex-flow: row nowrap!important;
@@ -357,9 +350,10 @@ section#intro div.container div div.container div#container-back {
 }
 section#intro div.container div div.container div#container-front h4,
 section#intro div.container div div.container div#container-back h4 {
-  position: relative;
+  position: absolute!important;
   cursor: pointer!important;
-  top: 10%!important;
+  top: 55%!important;
+  left: auto!important;
   color: rgba(56, 56, 56, 0.95) !important;
   text-align: center!important;
   font-weight: 500!important;
@@ -373,18 +367,13 @@ section#intro div.container div div.container div#container-front .fix-image-big
 section#intro div.container div div.container div#container-back .fix-image-big {
   margin-top: 11px!important;
 }
-section#intro div.container div div.container div#container-front .fix-title-1,
-section#intro div.container div div.container div#container-back .fix-title-1 {
-  margin-top: 10px!important;
-}
-section#intro div.container div div.container div#container-front .fix-title-2,
-section#intro div.container div div.container div#container-back .fix-title-2 {
-  margin-top: 20px!important;
-}
 section#intro div.container div div.container div#container-front div.description,
 section#intro div.container div div.container div#container-back div.description {
-  display: flex!important;
-  flex-flow: column wrap!important;
+  display: block!important;
+  position: absolute!important;
+  top: 80%!important;
+  left: 0!important;
+  right: 0!important;
 }
 section#intro div.container div div.container div#container-front div > h5,
 section#intro div.container div div.container div#container-back div > h5 {
@@ -443,7 +432,7 @@ div.hobby-grid {
   border-bottom: 2px solid grey!important;
   border-left: 2px solid grey!important;
 }
-@media only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), only screen and (min-width: 1824px) {
+@media only screen and (min-device-width: 1224px), only screen and (min-device-width: 1200px)and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi), only screen and (min-width: 1800px) {
   div.hobby-grid {
     width: 1105px!important;
   }
